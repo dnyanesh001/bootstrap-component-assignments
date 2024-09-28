@@ -1,11 +1,20 @@
 {
     "fields": [
       {
-        "key": "title",
+        "key": "heading",
         "type": "input",
         "templateOptions": {
-          "label": "Card Title",
-          "placeholder": "Enter card title",
+          "label": "heading",
+          "placeholder": "Enter Heading",
+          "required": true
+        }
+      },
+      {
+        "key": "subHeading",
+        "type": "input",
+        "templateOptions": {
+          "label": "subHeading",
+          "placeholder": "Enter subHeading",
           "required": true
         }
       },
@@ -14,43 +23,88 @@
         "type": "textarea",
         "templateOptions": {
           "label": "Description",
-          "placeholder": "Enter card description",
+          "placeholder": "Enter description",
           "required": true
         }
       },
       {
-        "key": "image",
+        "key": "links",
         "type": "input",
         "templateOptions": {
-          "label": "Image URL",
-          "placeholder": "Enter image URL",
+          "label": "URL",
+          "placeholder": "Enter URL",
           "required": true
         }
       },
       {
-        "key": "config.imageClass",
+        "key": "accordionData",
         "type": "input",
         "templateOptions": {
-          "label": "Image CSS Class",
-          "placeholder": "Enter CSS class for image",
+          "label": "accordionData",
+          "placeholder": "Enter accordionData",
           "required": true
         }
       },
       {
-        "key": "config.titleClass",
+        "key": "config.animation",
         "type": "input",
         "templateOptions": {
-          "label": "Title CSS Class",
-          "placeholder": "Enter CSS class for title",
+          "label": "animation",
+          "placeholder": "Enter animation",
           "required": true
         }
       },
       {
-        "key": "config.textClass",
+        "key": "config.isOpen",
         "type": "input",
         "templateOptions": {
-          "label": "Text CSS Class",
-          "placeholder": "Enter CSS class for text",
+          "label": "isOpen",
+          "placeholder": "Enter isOpen",
+          "required": true
+        }
+      },
+      {
+        "key": "config.closeOthers",
+        "type": "input",
+        "templateOptions": {
+          "label": "closeOthers",
+          "placeholder": "Enter closeOthers",
+          "required": true
+        }
+      },
+      {
+        "key": "config.isFlush",
+        "type": "input",
+        "templateOptions": {
+          "label": "isFlush",
+          "placeholder": "Enter isFlush",
+          "required": true
+        }
+      },
+      {
+        "key": "config. bgColor",
+        "type": "input",
+        "templateOptions": {
+          "label": " bgColor",
+          "placeholder": "Enter  bgColor",
+          "required": true
+        }
+      },
+      {
+        "key": "config. alternateBg",
+        "type": "input",
+        "templateOptions": {
+          "label": " alternateBg",
+          "placeholder": "Enter  alternateBg",
+          "required": true
+        }
+      },
+      {
+        "key": "config.elementClasses",
+        "type": "input",
+        "templateOptions": {
+          "label": "elementClasses",
+          "placeholder": "Enter elementClasses",
           "required": true
         }
       }
