@@ -7,6 +7,7 @@ class CardComponent extends HTMLElement {
         imageClass: "card-img-top",
         titleClass: "card-title",
         textClass: "card-text"
+        
     };
 
     defaultData = {
@@ -62,7 +63,7 @@ class CardComponent extends HTMLElement {
         if (this.data.subTitle) {
             const subTitle = this.createElement('h6', this.config.subTitleClass, this.data.subTitle);
             cardBody.appendChild(subTitle);
-        }
+        }   
         cardBody.appendChild(description);
         wrapperElm.appendChild(cardBody);
         this.appendChild(wrapperElm);
