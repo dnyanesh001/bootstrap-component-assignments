@@ -13,11 +13,11 @@ class ListComponent extends HTMLElement {
     };
 
     defaultData = [
-        {"text": "First checkbox", "subtext": "This is the first item", "badge": "1", "context": "success", "active": false, "disabled": false, "showBadge": true, "href": "https://www.youtube.com/"},
-        {"text": "Second checkbox", "subtext": "This is the second item", "badge": "2", "context": "warning", "active": false, "disabled": false, "showBadge": true, "href": "https://getbootstrap.com/docs/5.0/customize/components/"},
-        {"text": "Third checkbox", "subtext": "This is the third item", "badge": "3", "context": "danger", "active": false, "disabled": false, "showBadge": true, "href": "#"},
-        {"text": "Fourth checkbox", "subtext": "This is the fourth item", "badge": "4", "context": "info", "active": false, "disabled": false, "showBadge": true, "href": "#"},
-        {"text": "Fifth checkbox", "subtext": "This is the fifth item", "badge": "5", "context": "primary", "active": false, "disabled": true, "showBadge": true, "href": "#"},
+        {"heading": "First checkbox", "subheading": "This is the first item", "badge": "1", "context": "success", "active": false, "disabled": false, "showBadge": true, "href": "https://www.youtube.com/"},
+        {"heading": "Second checkbox", "subheading": "This is the second item", "badge": "2", "context": "warning", "active": false, "disabled": false, "showBadge": true, "href": "https://getbootstrap.com/docs/5.0/customize/components/"},
+        {"heading": "Third checkbox", "subheading": "This is the third item", "badge": "3", "context": "danger", "active": false, "disabled": false, "showBadge": true, "href": "#"},
+        {"heading": "Fourth checkbox", "subheading": "This is the fourth item", "badge": "4", "context": "info", "active": false, "disabled": false, "showBadge": true, "href": "#"},
+        {"heading": "Fifth checkbox", "subheading": "This is the fifth item", "badge": "5", "context": "primary", "active": false, "disabled": true, "showBadge": true, "href": "#"},
         
     ];
 
@@ -114,12 +114,12 @@ class ListComponent extends HTMLElement {
 
             const textContainer = document.createElement('div');
             textContainer.className = "flex-grow-1"; 
-            textContainer.appendChild(document.createTextNode(item.text));
+            textContainer.appendChild(document.createTextNode(item.heading));
 
-            if (item.subtext) {
+            if (item.subheading) {
                 const subheading = document.createElement('small');
                 subheading.className = "form-text text-muted"; 
-                subheading.textContent = item.subtext;
+                subheading.textContent = item.subheading;
                 textContainer.appendChild(subheading);
             }
 

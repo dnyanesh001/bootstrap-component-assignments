@@ -10,25 +10,28 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1>List Component Example</h1>
-        <list-component 
+    <div class="container mt-4">
+        <h1>List Heading</h1>
+        <h4 class="mt-2">List Sub Heading</h4>
+        <p class="mb-4">This is list group discription <a href="https://getbootstrap.com/docs/5.0/customize/components/" class="btn btn-link p-0" style="text-decoration: underline;">Read More</a> 
+        </p> 
+        <list-component  
             config='{
                 "listClass": "list-group",
                 "listItemClass": "list-group-item list-group-item-action d-flex justify-content-between align-items-start",
                 "checkboxClass": "form-check-input me-1",
-                "showCheckbox": false,
-                "numbered": true,
+                "showCheckbox":true ,
+                "numbered": false,
                 "horizontal": false,
-                "flush": false,
-                "badge": true
-            }' 
+                "flush": true
+                
+                }' 
             data='[
-                {"text": "First checkbox", "subtext": "This is the first item", "badge": "1", "context": "success", "active": false, "disabled": false, "showBadge": true, "href": "https://www.youtube.com/"},
-                {"text": "Second checkbox", "subtext": "This is the second item", "badge": "2", "context": "warning", "active": false, "disabled": false, "showBadge": true, "href": "https://getbootstrap.com/docs/5.0/customize/components/"},
-                {"text": "Third checkbox", "subtext": "This is the third item", "badge": "3", "context": "danger", "active": false, "disabled": false, "showBadge": true, "href": "#"},
-                {"text": "Fourth checkbox", "subtext": "This is the fourth item", "badge": "4", "context": "info", "active": false, "disabled": false, "showBadge": true, "href": "#"},
-                {"text": "Fifth checkbox", "subtext": "This is the fifth item", "badge": "5", "context": "primary", "active": false, "disabled": true, "showBadge": true, "href": "#"}
+                {"heading": "First checkbox", "subheading": "This is the first item", "badge": "1", "context": "success", "active": false, "disabled": false, "showBadge": false, "href": "https://www.youtube.com/"},
+                {"heading": "Second checkbox", "subheading": "This is the second item", "badge": "2", "context": "warning", "active": false, "disabled": false, "showBadge": true, "href": "https://getbootstrap.com/docs/5.0/customize/components/"},
+                {"heading": "Third checkbox", "subheading": "This is the third item", "badge": "3", "context": "danger", "active": false, "disabled": false, "showBadge": true, "href": "#"},
+                {"heading": "Fourth checkbox", "subheading": "This is the fourth item", "badge": "4", "context": "info", "active": false, "disabled": false, "showBadge": true, "href": "#"},
+                {"heading": "Fifth checkbox", "subheading": "This is the fifth item", "badge": "5", "context": "primar", "active": false, "disabled": true, "showBadge": true, "href": "#"}
             ]'>
         </list-component>
     </div>
