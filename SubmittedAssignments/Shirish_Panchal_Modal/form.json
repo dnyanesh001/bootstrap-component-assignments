@@ -4,53 +4,113 @@
         "key": "title",
         "type": "input",
         "templateOptions": {
-          "label": "Card Title",
-          "placeholder": "Enter card title",
+          "label": "Default Modal Title",
+          "placeholder": "Enter modal title",
           "required": true
         }
       },
       {
-        "key": "description",
-        "type": "textarea",
-        "templateOptions": {
-          "label": "Description",
-          "placeholder": "Enter card description",
-          "required": true
-        }
-      },
-      {
-        "key": "image",
+        "key": "tableData",
         "type": "input",
         "templateOptions": {
-          "label": "Image URL",
-          "placeholder": "Enter image URL",
+          "label": "tableDate",
+          "placeholder": "Enter table data",
           "required": true
         }
       },
       {
-        "key": "config.imageClass",
+        "key": "galleryImages",
         "type": "input",
         "templateOptions": {
-          "label": "Image CSS Class",
-          "placeholder": "Enter CSS class for image",
+          "label": "galleryImages",
+          "placeholder": "Enter gallery images",
           "required": true
         }
       },
       {
-        "key": "config.titleClass",
+        "key": "config.modalClass",
         "type": "input",
         "templateOptions": {
-          "label": "Title CSS Class",
-          "placeholder": "Enter CSS class for title",
+          "label": "modal",
+          "placeholder": "Enter modal",
           "required": true
         }
       },
       {
-        "key": "config.textClass",
+        "key": "config.modalDialogClass",
         "type": "input",
         "templateOptions": {
-          "label": "Text CSS Class",
-          "placeholder": "Enter CSS class for text",
+          "label": "modal-dialog",
+          "placeholder": "Enter modal-dialog",
+          "required": true
+        }
+      },
+      {
+        "key": "config.modalContentClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-content",
+          "placeholder": "Enter modal-content",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalHeaderClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-header",
+          "placeholder": "Enter modal-header",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalTitleClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-title",
+          "placeholder": "Enter modal-title",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalBodyClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-body",
+          "placeholder": "Enter modal-body",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalFooterClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-footer",
+          "placeholder": "Enter modal-footer",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.closeButtonClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "close",
+          "placeholder": "Enter close",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalOpenClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-open",
+          "placeholder": "Enter modal-open",
           "required": true
         }
       }

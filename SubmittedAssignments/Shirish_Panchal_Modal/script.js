@@ -15,12 +15,13 @@ class ModalComponent extends HTMLElement {
 
     defaultData = {
         title: "Default Modal Title",
-        tableData: [],
+        tableData: [""], 
         galleryImages: []
     };
 
     data = {};
     config = {};
+    backdrop = null; // To handle backdrop
 
     constructor() {
         super();
@@ -34,19 +35,13 @@ class ModalComponent extends HTMLElement {
         // Attach event listener to open modal
         const openModalBtn = document.getElementById('openModal');
         if (openModalBtn) {
-            openModalBtn.addEventListener('click', () => {
-                this.querySelector('.modal').style.display = 'block';
-                document.body.classList.add(this.config.modalOpenClass);
-            });
+            openModalBtn.addEventListener('click', () => this.showModal());
         }
 
         // Attach event listener to close modal (header and footer close buttons)
         const closeModalBtns = this.querySelectorAll('.close');
         closeModalBtns.forEach(closeBtn => {
-            closeBtn.addEventListener('click', () => {
-                this.querySelector('.modal').style.display = 'none';
-                document.body.classList.remove(this.config.modalOpenClass);
-            });
+            closeBtn.addEventListener('click', () => this.hideModal());
         });
     }
 
@@ -143,6 +138,31 @@ class ModalComponent extends HTMLElement {
         modalDialog.appendChild(modalContent);
         modalWrapper.appendChild(modalDialog);
         this.appendChild(modalWrapper);
+    }
+
+    // Function to show modal with backdrop
+    showModal() {
+        // Show modal
+        this.querySelector('.modal').style.display = 'block';
+        document.body.classList.add(this.config.modalOpenClass);
+
+        // Create backdrop
+        this.backdrop = document.createElement('div');
+        this.backdrop.className = 'modal-backdrop fade show'; // Using Bootstrap classes for fade
+        document.body.appendChild(this.backdrop);
+    }
+
+    // Function to hide modal and remove backdrop
+    hideModal() {
+        // Hide modal
+        this.querySelector('.modal').style.display = 'none';
+        document.body.classList.remove(this.config.modalOpenClass);
+
+        // Remove backdrop
+        if (this.backdrop) {
+            this.backdrop.remove();
+            this.backdrop = null;
+        }
     }
 
     createElement(tag, className, content) {

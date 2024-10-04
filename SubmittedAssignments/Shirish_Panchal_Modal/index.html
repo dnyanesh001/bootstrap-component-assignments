@@ -5,30 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Simple CSS for the gallery grid */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .gallery-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-    </style>
     <title>Student Data Modal with Gallery</title>
 </head>
 
 <body class="container">
-    <h2>Student Information Modal</h2>
+  <h2>Student Information Modal</h2>
 
-    <!-- Button to trigger modal -->
-    <button type="button" class="btn btn-primary" id="openModal">Open Student Info Modal</button>
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary" id="openModal">Open Student Info Modal</button>
 
     <!-- Modal Custom Component -->
     <modal-component 
@@ -36,9 +20,9 @@
         data='{
           "title": "Student Information with Gallery",
           "tableData": [
-            { "name": "Shree Waghmare", "age": 20, "qualification": "B.Sc" },
-            { "name": "Devram Devasi", "age": 22, "qualification": "M.Sc" },
-            { "name": "Abhijeet Bichukle", "age": 21, "qualification": "B.A" }
+            { "name": "Shree Waghmare", "age": 27, "qualification": "B.Sc", "email" : "shirishpanchal@gmail.com"},
+            { "name": "Devram Devasi", "age": 22, "qualification": "M.Sc", "email" : "shirishpanchal@gmail.com"},
+            { "name": "Abhijeet Bichukle", "age": 21, "qualification": "B.A","email" : "shirishpanchal@gmail.com"}
           ],
           "galleryImages": [
             { "src": "https://via.placeholder.com/100", "alt": "Image 1" },
@@ -48,16 +32,16 @@
           ]
         }'
         config='{
-          <!-- "modalDialogClass": "modal-dialog", -->
+          "modalDialogClass": "modal-dialog",
           "modalContentClass": "modal-content",
           "modalHeaderClass": "modal-header",
           "modalTitleClass": "modal-title",
           "modalBodyClass": "modal-body",
-          "modalFooterClass": "modal-footer",
+          "modalFooterClass": "modal-footer"
         }'>
-    </modal-component>
 
-    <script src="./script.js"></script>
+    </modal-component>
+  <script src="./script.js"></script>
 </body>
 
 </html>
