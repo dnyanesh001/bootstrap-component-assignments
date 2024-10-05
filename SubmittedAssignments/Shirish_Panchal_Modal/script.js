@@ -15,7 +15,7 @@ class ModalComponent extends HTMLElement {
 
     defaultData = {
         title: "Default Modal Title",
-        tableData: [""], 
+        tableData: [],
         galleryImages: []
     };
 
@@ -43,6 +43,9 @@ class ModalComponent extends HTMLElement {
         closeModalBtns.forEach(closeBtn => {
             closeBtn.addEventListener('click', () => this.hideModal());
         });
+
+        // Add key loop event listener
+        document.addEventListener('keydown', (event) => this.handleKeyLoop(event));
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -58,6 +61,55 @@ class ModalComponent extends HTMLElement {
         }
 
         this.renderComponent();
+    }
+
+    handleKeyLoop(event) {
+        const key = event.key;
+
+        // Define data to be passed based on key press
+        let newData = null;
+        if (key === '1') {
+            newData = {
+                title: "Student Information - Group 1",
+                tableData: [
+                    { name: "Student A", age: 20, qualification: "B.Com", email: "a@gmail.com" },
+                    { name: "Student B", age: 22, qualification: "B.Sc", email: "b@gmail.com" }
+                ],
+                galleryImages: [
+                    { src: "https://via.placeholder.com/100", alt: "Group 1 Image 1" },
+                    { src: "https://via.placeholder.com/100", alt: "Group 1 Image 2" }
+                ]
+            };
+        } else if (key === '2') {
+            newData = {
+                title: "Student Information - Group 2",
+                tableData: [
+                    { name: "Student C", age: 23, qualification: "M.Sc", email: "c@gmail.com" },
+                    { name: "Student D", age: 24, qualification: "M.A", email: "d@gmail.com" }
+                ],
+                galleryImages: [
+                    { src: "https://via.placeholder.com/100", alt: "Group 2 Image 1" },
+                    { src: "https://via.placeholder.com/100", alt: "Group 2 Image 2" }
+                ]
+            };
+        } else if (key === '3') {
+            newData = {
+                title: "Student Information - Group 3",
+                tableData: [
+                    { name: "Student E", age: 21, qualification: "B.A", email: "e@gmail.com" },
+                    { name: "Student F", age: 22, qualification: "B.Sc", email: "f@gmail.com" }
+                ],
+                galleryImages: [
+                    { src: "https://via.placeholder.com/100", alt: "Group 3 Image 1" },
+                    { src: "https://via.placeholder.com/100", alt: "Group 3 Image 2" }
+                ]
+            };
+        }
+
+        // If new data is defined, update the component's data attribute
+        if (newData) {
+            this.setAttribute('data', JSON.stringify(newData));
+        }
     }
 
     renderComponent() {
@@ -81,17 +133,18 @@ class ModalComponent extends HTMLElement {
 
         // Modal Body with Student Table and Gallery Grid
         const modalBody = this.createElement('div', this.config.modalBodyClass);
-        
+
         // Student Table
         const table = this.createElement('table', 'table table-bordered');
         const thead = this.createElement('thead');
-        const tbody = this.createElement('tbody'); 
+        const tbody = this.createElement('tbody');
 
         thead.innerHTML = `
             <tr>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Qualification</th>
+                <th>Email</th>
             </tr>
         `;
 
@@ -99,9 +152,10 @@ class ModalComponent extends HTMLElement {
         this.data.tableData.forEach(function(student) {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td>` + student.name + `</td>
-                <td>` + student.age + `</td>
-                <td>` + student.qualification + `</td>
+                <td>${student.name}</td>
+                <td>${student.age}</td>
+                <td>${student.qualification}</td>
+                <td>${student.email}</td>
             `;
             tbody.appendChild(tr);
         });
@@ -140,25 +194,20 @@ class ModalComponent extends HTMLElement {
         this.appendChild(modalWrapper);
     }
 
-    // Function to show modal with backdrop
     showModal() {
-        // Show modal
         this.querySelector('.modal').style.display = 'block';
         document.body.classList.add(this.config.modalOpenClass);
 
         // Create backdrop
         this.backdrop = document.createElement('div');
-        this.backdrop.className = 'modal-backdrop fade show'; // Using Bootstrap classes for fade
+        this.backdrop.className = 'modal-backdrop fade show';
         document.body.appendChild(this.backdrop);
     }
 
-    // Function to hide modal and remove backdrop
     hideModal() {
-        // Hide modal
         this.querySelector('.modal').style.display = 'none';
         document.body.classList.remove(this.config.modalOpenClass);
 
-        // Remove backdrop
         if (this.backdrop) {
             this.backdrop.remove();
             this.backdrop = null;

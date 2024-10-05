@@ -28,15 +28,6 @@
         }
       },
       {
-        "key": "config.modalClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "modal",
-          "placeholder": "Enter modal",
-          "required": true
-        }
-      },
-      {
         "key": "config.modalDialogClass",
         "type": "input",
         "templateOptions": {
@@ -93,27 +84,9 @@
           "placeholder": "Enter modal-footer",
           "required": true
         }
-      },
-
-      {
-        "key": "config.closeButtonClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "close",
-          "placeholder": "Enter close",
-          "required": true
-        }
-      },
-
-      {
-        "key": "config.modalOpenClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "modal-open",
-          "placeholder": "Enter modal-open",
-          "required": true
-        }
       }
+
+
     ]
   }
   
