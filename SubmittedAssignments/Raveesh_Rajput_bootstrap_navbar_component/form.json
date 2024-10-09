@@ -1,0 +1,260 @@
+{
+    "dataFields": [
+      {
+        "key": "brand",
+        "fieldGroup": [
+          {
+            "key": "src",
+            "type": "input",
+            "templateOptions": { "label": "Brand Logo Src (URL)", "placeholder": "Enter image URL" }
+          },
+          {
+            "key": "text",
+            "type": "input",
+            "templateOptions": { "label": "Brand Text", "placeholder": "Enter brand name", "required": true }
+          },
+          {
+            "key": "href",
+            "type": "input",
+            "templateOptions": { "label": "Brand Href", "placeholder": "Enter link" }
+          }
+        ]
+      },
+      {
+        "key": "toggler",
+        "fieldGroup": [
+          {
+            "key": "ariaControls",
+            "type": "input",
+            "templateOptions": { "label": "Aria Controls", "placeholder": "Enter aria-controls" }
+          },
+          {
+            "key": "ariaExpanded",
+            "type": "checkbox",
+            "templateOptions": { "label": "Aria Expanded" }
+          },
+          {
+            "key": "ariaLabel",
+            "type": "input",
+            "templateOptions": { "label": "Aria Label", "placeholder": "Enter aria-label" }
+          }
+        ]
+      },
+      {
+        "key": "collapse",
+        "fieldGroup": [
+          {
+            "key": "id",
+            "type": "input",
+            "templateOptions": { "label": "Collapse ID", "placeholder": "Enter collapse ID" }
+          }
+        ]
+      },
+      {
+        "key": "navItems",
+        "type": "repeat",
+        "templateOptions": {
+          "label": "Navigation Items",
+          "addText": "Add Navigation Item"
+        },
+        "fieldArray": {
+          "fieldGroup": [
+            {
+              "key": "href",
+              "type": "input",
+              "templateOptions": { "label": "Href", "placeholder": "Enter link" }
+            },
+            {
+              "key": "text",
+              "type": "input",
+              "templateOptions": { "label": "Text", "placeholder": "Enter link text" }
+            },
+            {
+              "key": "isActive",
+              "type": "checkbox",
+              "templateOptions": { "label": "Is Active" }
+            }
+          ]
+        }
+      }
+    ]
+  ,
+    "configFields": [
+      {
+        "key": "navbar",
+        "type": "input",
+        "templateOptions": {
+          "label": "Navbar Classes",
+          "placeholder": "Enter navbar classes",
+          "required": true
+        }
+      },
+      {
+        "key": "navbodyClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "Nav Body Classes",
+          "placeholder": "Enter nav body classes",
+          "required": true
+        }
+      },
+      {
+        "key": "brand",
+        "type": "input",
+        "templateOptions": {
+          "label": "Brand Class",
+          "placeholder": "Enter brand class",
+          "required": true
+        }
+      },
+      {
+        "key": "brandlogo",
+        "type": "input",
+        "templateOptions": {
+          "label": "Brand Logo",
+          "placeholder": "Enter brand logo",
+          "required": true
+        }
+      },
+      {
+        "key": "toggler",
+        "type": "input",
+        "templateOptions": {
+          "label": "Toggler Class",
+          "placeholder": "Enter toggler class",
+          "required": true
+        }
+      },
+      {
+        "key": "togglerIcon",
+        "type": "input",
+        "templateOptions": {
+          "label": "Toggler Icon Class",
+          "placeholder": "Enter toggler icon class",
+          "required": true
+        }
+      },
+      {
+        "key": "collapse",
+        "type": "input",
+        "templateOptions": {
+          "label": "Collapse Class",
+          "placeholder": "Enter collapse class",
+          "required": true
+        }
+      },
+      {
+        "key": "navItem",
+        "type": "input",
+        "templateOptions": {
+          "label": "Nav Item Class",
+          "placeholder": "Enter nav item class",
+          "required": true
+        }
+      },
+      {
+        "key": "ulClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "UL Class",
+          "placeholder": "Enter UL class",
+          "required": true
+        }
+      },
+      {
+        "key": "navLink",
+        "type": "repeat",
+        "templateOptions": {
+          "label": "Nav Link Classes",
+          "addText": "Add Navigation Classes",
+          "required": true
+        },
+        "fieldArray": {
+          "fieldGroup": [
+            {
+              "key": "default",
+              "type": "input",
+              "templateOptions": {
+                "label": "Default Class",
+                "placeholder": "Enter default nav link class",
+                "required": true
+              }
+            },
+            {
+              "key": "active",
+              "type": "input",
+              "templateOptions": {
+                "label": "Active Class",
+                "placeholder": "Enter active nav link class",
+                "required": true
+              }
+            },
+            {
+              "key": "disabled",
+              "type": "input",
+              "templateOptions": {
+                "label": "Disabled Class",
+                "placeholder": "Enter disabled nav link class",
+                "required": true
+              }
+            },
+            {
+              "key": "dropdownToggle",
+              "type": "input",
+              "templateOptions": {
+                "label": "Dropdown Toggle Class",
+                "placeholder": "Enter dropdown toggle class",
+                "required": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "key": "dropdownMenu",
+        "type": "input",
+        "templateOptions": {
+          "label": "Dropdown Menu Class",
+          "placeholder": "Enter dropdown menu class",
+          "required": true
+        }
+      },
+      {
+        "key": "dropdownItem",
+        "type": "input",
+        "templateOptions": {
+          "label": "Dropdown Item Class",
+          "placeholder": "Enter dropdown item class",
+          "required": true
+        }
+      },
+      {
+        "key": "searchForm",
+        "type": "input",
+        "templateOptions": {
+          "label": "Search Form Class",
+          "placeholder": "Enter search form class",
+          "required": true
+        }
+      },
+      {
+        "key": "searchInput",
+        "type": "input",
+        "templateOptions": {
+          "label": "Search Input Class",
+          "placeholder": "Enter search input class",
+          "required": true
+        }
+      },
+      {
+        "key": "searchButton",
+        "type": "input",
+        "templateOptions": {
+          "label": "Search Button Class",
+          "placeholder": "Enter search button class",
+          "required": true
+        }
+      }
+    ]
+  }
+  
