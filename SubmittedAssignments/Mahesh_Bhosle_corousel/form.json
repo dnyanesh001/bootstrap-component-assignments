@@ -1,14 +1,19 @@
 {
-  "carousel-element":{
-
-  
-
+  "carousel-element": {
     "formFields": [
       {
-        
+        "wrappers": [
+          "tabs"
+        ],
+        "templateOptions": {
+          "orientation": "horizontal",
+          "navType": "nav nav-tabs"
+        },
         "fieldGroup": [
           {
-            "templateOptions": { "label": "Config" },
+            "templateOptions": {
+              "label": "Config"
+            },
             "fieldGroup": [
               {
                 "key": "config",
@@ -16,91 +21,88 @@
                   {
                     "key": "carouselClass",
                     "type": "input",
+                    "className": "col-12",
                     "templateOptions": {
                       "label": "Carousel CSS Class",
-                      "placeholder": "carousel carousel-dark",
-                      "required": true
+                      "placeholder": "carousel carousel-dark"
+                      
                     }
                   },
                   {
                     "key": "innerClass",
                     "type": "input",
+                    "className": "col-12",
                     "templateOptions": {
                       "label": "Inner CSS Class",
-                      "placeholder": "carousel-inner",
-                      "required": true
+                      "placeholder": "carousel-inner"
+                      
                     }
                   },
                   {
                     "key": "imgClass",
                     "type": "input",
+                    "className": "col-12",
                     "templateOptions": {
                       "label": "Image CSS Class",
-                      "placeholder": "d-block w-100 ratio ratio-21x9",
-                      "required": true
+                      "placeholder": "d-block w-100 ratio ratio-21x9"
+                      
                     }
                   },
                   {
                     "key": "captionClass",
                     "type": "input",
+                    "className": "col-12",
                     "templateOptions": {
                       "label": "Caption CSS Class",
-                      "placeholder": "carousel-caption d-none d-md-block mb-4",
-                      "required": true
+                      "placeholder": "carousel-caption d-none d-md-block mb-4"
+                      
                     }
                   },
                   {
                     "key": "prevButtonClass",
                     "type": "input",
+                    "className": "col-12",
                     "templateOptions": {
                       "label": "Previous Button CSS Class",
-                      "placeholder": "carousel-control-prev",
-                      "required": true
+                      "placeholder": "carousel-control-prev"
+                      
                     }
                   },
                   {
                     "key": "nextButtonClass",
                     "type": "input",
+                    "className": "col-12",
                     "templateOptions": {
                       "label": "Next Button CSS Class",
-                      "placeholder": "carousel-control-next",
-                      "required": true
+                      "placeholder": "carousel-control-next"
+                      
                     }
                   },
                   {
                     "key": "indicators",
-                    "type": "select",
+                    "type": "checkbox",
+                    "className": "col-12",
                     "templateOptions": {
-                      "label": "Enable Indicators",
-                      "options": [
-                        { "label": "Yes", "value": true },
-                        { "label": "No", "value": false }
-                      ],
-                      "required": true
+                      "label": "Enable Indicators"
+                      
                     }
                   },
                   {
                     "key": "captions",
-                    "type": "select",
+                    "type": "checkbox",
+                    "className": "col-12",
                     "templateOptions": {
-                      "label": "Enable Captions",
-                      "options": [
-                        { "label": "Yes", "value": true },
-                        { "label": "No", "value": false }
-                      ],
-                      "required": true
+                      "label": "Enable Captions"
+                      
                     }
                   },
                   {
                     "key": "buttons",
-                    "type": "select",
+                    "type": "checkbox",
+                    "className": "col-12",
                     "templateOptions": {
-                      "label": "Enable Buttons",
-                      "options": [
-                        { "label": "Yes", "value": true },
-                        { "label": "No", "value": false }
-                      ],
-                      "required": true
+                      "label": "Enable Buttons"
+                      
                     }
                   }
                 ]
@@ -108,78 +110,86 @@
             ]
           },
           {
-            "templateOptions": { "label": "Data" },
+            "templateOptions": {
+              "label": "Data"
+            },
             "fieldGroup": [
               {
                 "key": "data",
                 "type": "repeat",
+                "className": "col-12",
                 "templateOptions": {
                   "addText": "Add Carousel Item"
                 },
-                  "fieldGroup": [
-                    {
-                      "key": "src",
-                      "type": "input",
-                      "templateOptions": {
-                        "label": "Image URL",
-                        "placeholder": "https://via.placeholder.com/800x400?text=Slide",
-                        "required": true
-                      }
-                    },
-                    {
-                      "key": "alt",
-                      "type": "input",
-                      "templateOptions": {
-                        "label": "Alt Text",
-                        "placeholder": "Enter alt text",
-                        "required": true
-                      }
-                    },
-                    {
-                      "key": "caption.title",
-                      "type": "input",
-                      "templateOptions": {
-                        "label": "Caption Title",
-                        "placeholder": "Enter caption title",
-                        "required": true
-                      }
-                    },
-                    {
-                      "key": "caption.subtitle",
-                      "type": "input",
-                      "templateOptions": {
-                        "label": "Caption Subtitle",
-                        "placeholder": "Enter caption subtitle"
-                      }
-                    },
-                    {
-                      "key": "caption.text",
-                      "type": "textarea",
-                      "templateOptions": {
-                        "label": "Caption Text",
-                        "placeholder": "Enter caption text",
-                        "required": true
-                      }
-                    },
-                    {
-                      "key": "caption.titleLink",
-                      "type": "input",
-                      "templateOptions": {
-                        "label": "Caption Title Link",
-                        "placeholder": "https://example.com",
-                        "required": false
-                      }
+                "fieldGroup": [
+                  {
+                    "key": "src",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Image URL",
+                      "placeholder": "https://via.placeholder.com/800x400?text=Slide"
+                      
                     }
-                  ]
-                
+                  },
+                  {
+                    "key": "alt",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Alt Text",
+                      "placeholder": "Enter alt text"
+                      
+                    }
+                  },
+                  {
+                    "key": "caption.title",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Title",
+                      "placeholder": "Enter caption title"
+                      
+                    }
+                  },
+                  {
+                    "key": "caption.subtitle",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Subtitle",
+                      "placeholder": "Enter caption subtitle"
+                    }
+                  },
+                  {
+                    "key": "caption.text",
+                    "type": "textarea",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Text",
+                      "placeholder": "Enter caption text"
+                      
+                    }
+                  },
+                  {
+                    "key": "caption.titleLink",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Title Link",
+                      "placeholder": "https://example.com"
+                      
+                    }
+                  }
+                ]
               }
             ]
           }
         ]
       }
     ],
-    "formData":{
-      "config ":{
+    "formData": {
+      "config ": {
         "carouselClass": "carousel slide carousel-dark",
         "innerClass": "carousel-inner",
         "itemClass": "carousel-item",
@@ -188,13 +198,13 @@
         "nextButtonClass": "carousel-control-next",
         "prevIconClass": "carousel-control-prev-icon",
         "nextIconClass": "carousel-control-next-icon",
-        "buttonTextClass": "visually-hidden", 
+        "buttonTextClass": "visually-hidden",
         "indicatorClass": "carousel-indicators",
         "indicatorItemClass": "carousel-indicator",
         "activeClass": "active",
-        "ride": "carousel", 
+        "ride": "carousel",
         "touch": true,
-        "slide": true,  
+        "slide": true,
         "captionClass": "carousel-caption d-none d-md-block mb-4",
         "captionTitleClass": "carousel-title h1 text-danger text-uppercase text-decoration-none",
         "captionSubTitleClass": "carousel-subtitle h3 text-muted",
@@ -204,38 +214,29 @@
         "indicators": true,
         "captions": true,
         "buttons": true
-    },
-    "data":[
-      {
+      },
+      "data": [
+        {
           "src": "https://via.placeholder.com/800x400?text=First+Slide",
           "alt": "First Slide",
           "caption": {
-              "title": "Journey Through the Unknown",
-              "subtitle": "Explore the Unseen",
-              "text": "Some representative placeholder content for the first slide.",
-              "titleLink": "https://example.com/first"
+            "title": "Journey Through the Unknown",
+            "subtitle": "Explore the Unseen",
+            "text": "Some representative placeholder content for the first slide.",
+            "titleLink": "https://example.com/first"
           }
-      },
-      {
+        },
+        {
           "src": "https://via.placeholder.com/800x400?text=Second+Slide",
           "alt": "Second Slide",
           "caption": {
-              "title": "Whispers of the Horizon",
-              "subtitle": "Look Beyond",
-              "text": "Some representative placeholder content for the second slide.",
-              "titleLink": "https://example.com/second"
+            "title": "Whispers of the Horizon",
+            "subtitle": "Look Beyond",
+            "text": "Some representative placeholder content for the second slide.",
+            "titleLink": "https://example.com/second"
           }
-      }
-  ]
-
+        }
+      ]
     }
-
-
   }
-  }
-  
-
-
-
-
- 
+}
