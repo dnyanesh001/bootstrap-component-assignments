@@ -1,0 +1,72 @@
+{
+  "fields": [
+    {
+      "key": "title",
+      "type": "input",
+      "templateOptions": {
+        "label": "Card Title",
+        "placeholder": "Enter card title",
+        "required": true
+      }
+    },
+    {
+      "key": "subTitle",
+      "type": "input",
+      "templateOptions": {
+        "label": "Card Subtitle",
+        "placeholder": "Enter card subtitle",
+        "required": false
+      }
+    },
+    {
+      "key": "description",
+      "type": "textarea",
+      "templateOptions": {
+        "label": "Description",
+        "placeholder": "Enter card description",
+        "required": true
+      }
+    },
+    {
+      "key": "image",
+      "type": "input",
+      "templateOptions": {
+        "label": "Image URL",
+        "placeholder": "Enter image URL",
+        "required": true
+      }
+    },
+    {
+      "key": "position",
+      "type": "select",
+      "templateOptions": {
+        "label": "Image Position",
+        "options": [
+          { "name": "Top", "value": "top" },
+          { "name": "Left", "value": "left" },
+          { "name": "Bottom", "value": "bottom" },
+          { "name": "Right", "value": "right" }
+        ],
+        "required": true
+      }
+    },
+    {
+      "key": "color",
+      "type": "input",
+      "templateOptions": {
+        "label": "Card Color",
+        "placeholder": "Enter card color",
+        "required": true
+      }
+    },
+    {
+      "key": "footer",
+      "type": "input",
+      "templateOptions": {
+        "label": "Card Footer",
+        "placeholder": "Enter card footer",
+        "required": false
+      }
+    }
+  ]
+}
