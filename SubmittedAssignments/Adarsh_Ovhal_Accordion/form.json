@@ -1,0 +1,99 @@
+{
+    "fields": [
+      {
+        "key": "heading",
+        "type": "input",
+        "templateOptions": {
+          "label": "heading",
+          "placeholder": "Enter Heading"
+        }
+      },
+      {
+        "key": "subHeading",
+        "type": "input",
+        "templateOptions": {
+          "label": "subHeading",
+          "placeholder": "Enter subHeading"
+        }
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "templateOptions": {
+          "label": "Description",
+          "placeholder": "Enter description"
+        }
+      },
+      {
+        "key": "links",
+        "type": "input",
+        "templateOptions": {
+          "label": "URL",
+          "placeholder": "Enter URL"
+        }
+      },
+      {
+        "key": "accordionData",
+        "type": "input",
+        "templateOptions": {
+          "label": "accordionData",
+          "placeholder": "Enter accordionData"
+        }
+      },
+      {
+        "key": "config.animation",
+        "type": "checkbox",
+        "templateOptions": {
+          "label": "animation"
+         
+        }
+      },
+      {
+        "key": "config.isOpen",
+        "type": "checkbox",
+        "templateOptions": {
+          "label": "isOpen"
+          
+        }
+      },
+      {
+        "key": "config.closeOthers",
+        "type": "checkbox",
+        "templateOptions": {
+          "label": "closeOthers"
+        }
+      },
+      {
+        "key": "config.isFlush",
+        "type": "checkbox",
+        "templateOptions": {
+          "label": "isFlush"
+        }
+      },
+      {
+        "key": "config.bgColor",
+        "type": "input",
+        "templateOptions": {
+          "label": "bgColor",
+          "placeholder": "Enter  bgColor"
+        }
+      },
+      {
+        "key": "config.alternateBg",
+        "type": "input",
+        "templateOptions": {
+          "label": " alternateBg",
+          "placeholder": "Enter  alternateBg"
+        }
+      },
+      {
+        "key": "config.elementClasses",
+        "type": "input",
+        "templateOptions": {
+          "label": "elementClasses",
+          "placeholder": "Enter elementClasses"
+        }
+      }
+    ]
+  }
+  
