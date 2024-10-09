@@ -1,0 +1,178 @@
+{
+    "fields": [
+      {
+        
+        "fieldGroup": [
+          {
+            "templateOptions": { "label": "Config" },
+            "fieldGroup": [
+              {
+                "key": "config",
+                "fieldGroup": [
+                  {
+                    "key": "carouselClass",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Carousel CSS Class",
+                      "placeholder": "carousel carousel-dark",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "innerClass",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Inner CSS Class",
+                      "placeholder": "carousel-inner",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "imgClass",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Image CSS Class",
+                      "placeholder": "d-block w-100 ratio ratio-21x9",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "captionClass",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Caption CSS Class",
+                      "placeholder": "carousel-caption d-none d-md-block mb-4",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "prevButtonClass",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Previous Button CSS Class",
+                      "placeholder": "carousel-control-prev",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "nextButtonClass",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Next Button CSS Class",
+                      "placeholder": "carousel-control-next",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "indicators",
+                    "type": "select",
+                    "templateOptions": {
+                      "label": "Enable Indicators",
+                      "options": [
+                        { "label": "Yes", "value": true },
+                        { "label": "No", "value": false }
+                      ],
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "captions",
+                    "type": "select",
+                    "templateOptions": {
+                      "label": "Enable Captions",
+                      "options": [
+                        { "label": "Yes", "value": true },
+                        { "label": "No", "value": false }
+                      ],
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "buttons",
+                    "type": "select",
+                    "templateOptions": {
+                      "label": "Enable Buttons",
+                      "options": [
+                        { "label": "Yes", "value": true },
+                        { "label": "No", "value": false }
+                      ],
+                      "required": true
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "templateOptions": { "label": "Data" },
+            "fieldGroup": [
+              {
+                "key": "data",
+                "type": "repeat",
+                "templateOptions": {
+                  "addText": "Add Carousel Item"
+                },
+                  "fieldGroup": [
+                    {
+                      "key": "src",
+                      "type": "input",
+                      "templateOptions": {
+                        "label": "Image URL",
+                        "placeholder": "https://via.placeholder.com/800x400?text=Slide",
+                        "required": true
+                      }
+                    },
+                    {
+                      "key": "alt",
+                      "type": "input",
+                      "templateOptions": {
+                        "label": "Alt Text",
+                        "placeholder": "Enter alt text",
+                        "required": true
+                      }
+                    },
+                    {
+                      "key": "caption.title",
+                      "type": "input",
+                      "templateOptions": {
+                        "label": "Caption Title",
+                        "placeholder": "Enter caption title",
+                        "required": true
+                      }
+                    },
+                    {
+                      "key": "caption.subtitle",
+                      "type": "input",
+                      "templateOptions": {
+                        "label": "Caption Subtitle",
+                        "placeholder": "Enter caption subtitle"
+                      }
+                    },
+                    {
+                      "key": "caption.text",
+                      "type": "textarea",
+                      "templateOptions": {
+                        "label": "Caption Text",
+                        "placeholder": "Enter caption text",
+                        "required": true
+                      }
+                    },
+                    {
+                      "key": "caption.titleLink",
+                      "type": "input",
+                      "templateOptions": {
+                        "label": "Caption Title Link",
+                        "placeholder": "https://example.com",
+                        "required": false
+                      }
+                    }
+                  ]
+                
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
