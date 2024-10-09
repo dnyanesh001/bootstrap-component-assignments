@@ -25,7 +25,6 @@
                     "templateOptions": {
                       "label": "Carousel CSS Class",
                       "placeholder": "carousel carousel-dark"
-                      
                     }
                   },
                   {
@@ -35,7 +34,6 @@
                     "templateOptions": {
                       "label": "Inner CSS Class",
                       "placeholder": "carousel-inner"
-                      
                     }
                   },
                   {
@@ -45,7 +43,6 @@
                     "templateOptions": {
                       "label": "Image CSS Class",
                       "placeholder": "d-block w-100 ratio ratio-21x9"
-                      
                     }
                   },
                   {
@@ -55,7 +52,6 @@
                     "templateOptions": {
                       "label": "Caption CSS Class",
                       "placeholder": "carousel-caption d-none d-md-block mb-4"
-                      
                     }
                   },
                   {
@@ -65,7 +61,6 @@
                     "templateOptions": {
                       "label": "Previous Button CSS Class",
                       "placeholder": "carousel-control-prev"
-                      
                     }
                   },
                   {
@@ -75,7 +70,6 @@
                     "templateOptions": {
                       "label": "Next Button CSS Class",
                       "placeholder": "carousel-control-next"
-                      
                     }
                   },
                   {
@@ -84,7 +78,6 @@
                     "className": "col-12",
                     "templateOptions": {
                       "label": "Enable Indicators"
-                      
                     }
                   },
                   {
@@ -93,7 +86,6 @@
                     "className": "col-12",
                     "templateOptions": {
                       "label": "Enable Captions"
-                      
                     }
                   },
                   {
@@ -102,7 +94,6 @@
                     "className": "col-12",
                     "templateOptions": {
                       "label": "Enable Buttons"
-                      
                     }
                   }
                 ]
@@ -129,7 +120,6 @@
                     "templateOptions": {
                       "label": "Image URL",
                       "placeholder": "https://via.placeholder.com/800x400?text=Slide"
-                      
                     }
                   },
                   {
@@ -139,7 +129,6 @@
                     "templateOptions": {
                       "label": "Alt Text",
                       "placeholder": "Enter alt text"
-                      
                     }
                   },
                   {
@@ -149,7 +138,6 @@
                     "templateOptions": {
                       "label": "Caption Title",
                       "placeholder": "Enter caption title"
-                      
                     }
                   },
                   {
@@ -168,7 +156,6 @@
                     "templateOptions": {
                       "label": "Caption Text",
                       "placeholder": "Enter caption text"
-                      
                     }
                   },
                   {
@@ -178,7 +165,6 @@
                     "templateOptions": {
                       "label": "Caption Title Link",
                       "placeholder": "https://example.com"
-                      
                     }
                   }
                 ]
