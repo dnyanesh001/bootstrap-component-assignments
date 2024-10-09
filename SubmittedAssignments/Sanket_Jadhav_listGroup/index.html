@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>List Group Component </title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>List Heading</h1>
+        <h4 class="mt-2">List Sub Heading</h4>
+        <p class="mb-4">This is list group discription <a href="https://getbootstrap.com/docs/5.0/customize/components/" class="btn btn-link p-0" style="text-decoration: underline;">Read More</a> 
+        </p> 
+        <list-component  
+            config='{
+                "listClass": "list-group",
+                "listItemClass": "list-group-item list-group-item-action d-flex justify-content-between align-items-start",
+                "checkboxClass": "form-check-input me-1",
+                "showCheckbox":true ,
+                "numbered": false,
+                "horizontal": false,
+                "flush": true
+                
+                }' 
+            data='[
+                {"heading": "First checkbox", "subheading": "This is the first item", "badge": "1", "context": "success", "active": false, "disabled": false, "showBadge": false, "href": "https://www.youtube.com/"},
+                {"heading": "Second checkbox", "subheading": "This is the second item", "badge": "2", "context": "warning", "active": false, "disabled": false, "showBadge": true, "href": "https://getbootstrap.com/docs/5.0/customize/components/"},
+                {"heading": "Third checkbox", "subheading": "This is the third item", "badge": "3", "context": "danger", "active": false, "disabled": false, "showBadge": true, "href": "#"},
+                {"heading": "Fourth checkbox", "subheading": "This is the fourth item", "badge": "4", "context": "info", "active": false, "disabled": false, "showBadge": true, "href": "#"},
+                {"heading": "Fifth checkbox", "subheading": "This is the fifth item", "badge": "5", "context": "primar", "active": false, "disabled": true, "showBadge": true, "href": "#"}
+            ]'>
+        </list-component>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

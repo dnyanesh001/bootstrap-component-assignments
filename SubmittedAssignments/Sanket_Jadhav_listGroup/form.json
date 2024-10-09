@@ -1,0 +1,121 @@
+{
+  "fields": [
+    {
+      "key": "heading",
+      "type": "input",
+      "templateOptions": {
+        "label": "Heading",
+        "placeholder": "Enter heading",
+        "required": true
+      }
+    },
+    {
+      "key": "subheading",
+      "type": "input",
+      "templateOptions": {
+        "label": "Subheading",
+        "placeholder": "Enter subheading",
+        "required": true
+      }
+    },
+    {
+      "key": "badge",
+      "type": "input",
+      "templateOptions": {
+        "label": "Badge",
+        "placeholder": "Enter badge value",
+        "required": true
+      }
+    },
+    {
+      "key": "context",
+      "type": "input",
+      "templateOptions": {
+        "label": "Context ",
+        "placeholder": "Enter context",
+        "required": true
+      }
+    },
+    {
+      "key": "active",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Active",
+        "placeholder":"Active",
+        "required": false
+      }
+    },
+    {
+      "key": "disabled",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Disabled",
+        "placeholder": "Disabled",
+        "required": false
+      }
+    },
+    {
+      "key": "href",
+      "type": "input",
+      "templateOptions": {
+        "label": "Link URL",
+        "placeholder": "Enter href",
+        "required": true
+      }
+    },
+    {
+      "key": "config.listClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "List Class",
+        "placeholder": "Enter list",
+        "required": true
+      }
+    },
+    {
+      "key": "config.listItemClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "List Item Class",
+        "placeholder": "Enter  class item",
+        "required": true
+      }
+    },
+    {
+      "key": "config.checkboxClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Checkbox Class",
+        "placeholder": "Enter checkbox",
+        "required": true
+      }
+    },
+    {
+      "key": "config.numbered",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Numbered",
+        "placeholder": "Numbered",
+        "required": false
+      }
+    },
+    {
+      "key": "config.horizontal",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Horizontal",
+        "placeholder": "Horizontal",
+        "required": false
+      }
+    },
+    {
+      "key": "config.flush",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Flush",
+        "placeholder": "Flush",
+        "required": false
+      }
+    }
+  ]
+}
