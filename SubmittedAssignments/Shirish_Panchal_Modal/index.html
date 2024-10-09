@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Student Data Modal with Gallery</title>
+</head>
+
+<body class="container">
+    <h2>Student Information Modal</h2>
+
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-primary" id="openModal">Open Student Info Modal</button>
+
+    <!-- Modal Custom Component -->
+    <modal-component 
+        class="d-block"
+        data='{
+          "title": "Student Information with Gallery",
+          "tableData": [
+            { "name": "Shree Waghmare", "age": 27, "qualification": "B.Sc", "email" : "swaghmare@gmail.com"},
+            { "name": "Devram Devasi", "age": 22, "qualification": "M.Sc", "email" : "devaramdevasi@gmail.com"},
+            { "name": "Abhijeet Bichukle", "age": 21, "qualification": "B.A","email" : "abhijeetichukle@gmail.com"},
+            { "name": "Prajwal Tilekar", "age": 21, "qualification": "B.A","email" : "prajwaltilekar@gmail.com"}
+          ],
+          "galleryImages": [
+            { "src": "https://via.placeholder.com/100", "alt": "Image 1" },
+            { "src": "https://via.placeholder.com/100", "alt": "Image 2" },
+            { "src": "https://via.placeholder.com/100", "alt": "Image 3" },
+            { "src": "https://via.placeholder.com/100", "alt": "Image 4" }
+          ]
+        }'
+        config='{
+          "modalDialogClass": "modal-dialog",
+          "modalContentClass": "modal-content",
+          "modalHeaderClass": "modal-header",
+          "modalTitleClass": "modal-title",
+          "modalBodyClass": "modal-body",
+          "modalFooterClass": "modal-footer"
+        }'>
+    </modal-component>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

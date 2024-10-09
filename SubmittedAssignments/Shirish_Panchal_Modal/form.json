@@ -1,0 +1,92 @@
+{
+    "fields": [
+      {
+        "key": "title",
+        "type": "input",
+        "templateOptions": {
+          "label": "Default Modal Title",
+          "placeholder": "Enter modal title",
+          "required": true
+        }
+      },
+      {
+        "key": "tableData",
+        "type": "input",
+        "templateOptions": {
+          "label": "tableDate",
+          "placeholder": "Enter table data",
+          "required": true
+        }
+      },
+      {
+        "key": "galleryImages",
+        "type": "input",
+        "templateOptions": {
+          "label": "galleryImages",
+          "placeholder": "Enter gallery images",
+          "required": true
+        }
+      },
+      {
+        "key": "config.modalDialogClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-dialog",
+          "placeholder": "Enter modal-dialog",
+          "required": true
+        }
+      },
+      {
+        "key": "config.modalContentClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-content",
+          "placeholder": "Enter modal-content",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalHeaderClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-header",
+          "placeholder": "Enter modal-header",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalTitleClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-title",
+          "placeholder": "Enter modal-title",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalBodyClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-body",
+          "placeholder": "Enter modal-body",
+          "required": true
+        }
+      },
+
+      {
+        "key": "config.modalFooterClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "modal-footer",
+          "placeholder": "Enter modal-footer",
+          "required": true
+        }
+      }
+
+
+    ]
+  }
+  
