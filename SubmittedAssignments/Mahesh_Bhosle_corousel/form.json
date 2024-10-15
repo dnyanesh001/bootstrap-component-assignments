@@ -101,73 +101,65 @@
             ]
           },
           {
+            "key": "data",
             "templateOptions": {
               "label": "Data"
             },
+            "fieldGroupClassName": "row",
             "fieldGroup": [
               {
-                "key": "data",
-                "type": "repeat",
+                "key": "src",
+                "type": "input",
                 "className": "col-12",
                 "templateOptions": {
-                  "addText": "Add Carousel Item"
-                },
-                "fieldGroup": [
-                  {
-                    "key": "src",
-                    "type": "input",
-                    "className": "col-12",
-                    "templateOptions": {
-                      "label": "Image URL",
-                      "placeholder": "https://via.placeholder.com/800x400?text=Slide"
-                    }
-                  },
-                  {
-                    "key": "alt",
-                    "type": "input",
-                    "className": "col-12",
-                    "templateOptions": {
-                      "label": "Alt Text",
-                      "placeholder": "Enter alt text"
-                    }
-                  },
-                  {
-                    "key": "caption.title",
-                    "type": "input",
-                    "className": "col-12",
-                    "templateOptions": {
-                      "label": "Caption Title",
-                      "placeholder": "Enter caption title"
-                    }
-                  },
-                  {
-                    "key": "caption.subtitle",
-                    "type": "input",
-                    "className": "col-12",
-                    "templateOptions": {
-                      "label": "Caption Subtitle",
-                      "placeholder": "Enter caption subtitle"
-                    }
-                  },
-                  {
-                    "key": "caption.text",
-                    "type": "textarea",
-                    "className": "col-12",
-                    "templateOptions": {
-                      "label": "Caption Text",
-                      "placeholder": "Enter caption text"
-                    }
-                  },
-                  {
-                    "key": "caption.titleLink",
-                    "type": "input",
-                    "className": "col-12",
-                    "templateOptions": {
-                      "label": "Caption Title Link",
-                      "placeholder": "https://example.com"
-                    }
-                  }
-                ]
+                  "label": "Image URL",
+                  "placeholder": "https://via.placeholder.com/800x400?text=Slide"
+                }
+              },
+              {
+                "key": "alt",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Alt Text",
+                  "placeholder": "Enter alt text"
+                }
+              },
+              {
+                "key": "caption.title",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Caption Title",
+                  "placeholder": "Enter caption title"
+                }
+              },
+              {
+                "key": "caption.subtitle",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Caption Subtitle",
+                  "placeholder": "Enter caption subtitle"
+                }
+              },
+              {
+                "key": "caption.text",
+                "type": "textarea",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Caption Text",
+                  "placeholder": "Enter caption text"
+                }
+              },
+              {
+                "key": "caption.titleLink",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Caption Title Link",
+                  "placeholder": "https://example.com"
+                }
               }
             ]
           }
