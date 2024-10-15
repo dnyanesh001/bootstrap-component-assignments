@@ -1,0 +1,225 @@
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 15mm;
+}
+
+.invoice-wrapper {
+  width: 210mm;
+  height: 297mm;
+  background-color: #ffffff;
+  border-radius: 2mm;
+  overflow: hidden;
+  position: relative;
+  padding: 0 5mm;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.invoice-background {
+  position: absolute;
+  width: 210mm;
+  height: 297mm;
+}
+
+.rect-top-1 {
+  position: absolute;
+  height: 28mm;
+  width: 46mm;
+  top: 7mm; /* Slightly adjusted for better positioning */
+  left: 25mm; /* Centered more towards the middle */
+  border-radius: 10mm;
+  background-color: aquamarine;
+  transform: rotate(145deg) skew(60deg); /* Refined angles for smoother appearance */
+}
+
+.rect-top-2 {
+  position: absolute;
+  height: 12mm;
+  width: 186mm;
+  top: 0mm; /* Slightly lowered to align with top design */
+  left: 40mm; /* Adjusted for better flow */
+  background-color: #033b5b;
+  border-radius: 6mm; /* Smoothened edges */
+}
+
+.rect-top-3 {
+  position: absolute;
+  height: 50mm;
+  width: 90mm;
+  top: -15mm; /* Adjusted for better balance */
+  left: -20mm; /* Repositioned for better alignment */
+  border-radius: 65mm;
+  background-color: #033b5b;
+  transform: rotate(145deg) skew(55deg); /* Refined angles */
+}
+
+
+.rect-bottom-1 {
+  position: absolute;
+  height: 28mm;
+  width: 70mm;
+  top: 260mm;
+  left: 120mm;
+  border-radius: 65mm;
+  background-color: aquamarine;
+  transform: rotate(154deg) skew(67deg);
+}
+
+.rect-bottom-2 {
+  position: absolute;
+  height: 12mm;
+  width: 186mm;
+  top: 285mm; /* Slightly lowered to align with top design */
+  left: -10mm; /* Adjusted for better flow */
+  background-color: #033b5b;
+  border-radius: 6mm; /* Smoothened edges */
+}
+
+.rect-bottom-3 {
+  position: absolute;
+  height: 50mm;
+  width: 115mm;
+  top: 250mm; /* Adjusted for better balance */
+  left: 175mm; /* Repositioned for better alignment */
+  border-radius: 65mm;
+  background-color: #033b5b;
+  transform: rotate(154deg) skew(67deg);
+}
+
+.invoice-content {
+  position: absolute;
+  height: 297mm;
+  width: 210mm;
+}
+
+.invoice-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 37mm;
+  padding: 0;
+}
+
+.invoice-header .invoice-header-logo {
+  width: 25mm;
+  position: relative;
+  top: -22mm;
+  left: 0mm;
+}
+
+
+.invoice-header-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.invoice-title {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  width: max-content;
+  font-size: 30pt;
+  font-family: 'Times New Roman', Times, serif;
+  right: -80mm;
+  top: 10mm;
+}
+.org-name,.org-gst-no{
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 13.2pt;
+  margin-bottom: 2mm;
+}
+.org-address{
+  position: relative;
+  font-size: 13.2pt;
+  text-align: right;
+  line-height: 0.5;
+}
+.invoice-details {
+  text-align: justify;
+  position: relative;
+  right: 50mm;
+  font-size: 13.2pt;
+  bottom: -23mm;
+}
+.margin-bottom {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+
+.customer-details-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 0.3;
+}
+
+.billing-address-section {
+  position: relative;
+  left: -16mm;
+  width: 32%;
+}
+
+.shipping-address-section {
+  position: relative;
+  right: -13mm;
+  padding: 1mm;
+  text-align: end;
+  top: 1mm;
+  width: 36%;
+}
+
+.items-section {
+  margin-bottom: 20px;
+  position: relative;
+  top: 0mm;
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.22);
+  margin-bottom: 5mm;
+}
+.content-table th, .content-table td {
+  border: 1px solid #bbbbbb;
+  padding: 8px;
+  text-align: left;
+}
+.content-header {
+  background-color: #f2f2f2;
+}
+.total-amount {
+  font-weight: bold;
+}
+.bank-details{
+  position: relative;
+  left: 60mm;
+  top: 7mm;
+  width: max-content;
+  align-items: center;
+}
+.terms{
+  position: relative;
+  top: 15mm;
+  width: max-content;
+  font-size: small;
+}
+.invoice-footer {
+  position: relative;
+  top: -27mm;
+}
+.invoice-footer div {
+  position: relative;
+  left: 163mm;
+  top: -25mm;
+  width: 70mm;
+  line-height: 1.6;
+}

@@ -59,16 +59,12 @@ class CardComponent extends HTMLElement {
     updateData() {
         const updatedData = JSON.parse(this.getAttribute('data'));
         this.data = updatedData || this.defaultData;
-        console.log(this.data);
     }
 
     renderComponent() {
         this.innerHTML = '';
         this.className = this.config.cardContainerClass;
 
-        const wrapperElmWidth = getComputedStyle(this).width !== 'auto' ? getComputedStyle(this).width.trim() : '300px';
-        this.style.width = `${parseInt(wrapperElmWidth)}px`;
-        this.style.display = 'inline-block';
 
         if (this.data.showImage && this.data.image) {
             const img = this.createElement('img', this.config.imageClass);
@@ -99,7 +95,6 @@ class CardComponent extends HTMLElement {
         }
         
         if (this.data.showLink && this.data.link) {
-            console.log(this.data.link);
             const linkContent = this.data.link;
             const linkContSeparated = linkContent.split(",");
 
