@@ -2,14 +2,14 @@ class CardComponent extends HTMLElement {
     static observedAttributes = ["config", "data"];
 
     defaultConfig = {
-        cardContainerClass: "card",
+        cardContainerClass: "card my-3",
         cardBodyClass: "card-body",
         imageClass: "card-img-top",
         titleClass: "card-title",
-        subTitleClass:"card-subtitle  my-3",
+        subTitleClass: "card-subtitle my-3",
         textClass: "card-text",
-        buttonClass :"btn btn-warning",
-        linkClass : "card-link"
+        buttonClass: "btn btn-warning",
+        linkClass: "card-link"
     };
 
     defaultData = {
@@ -17,12 +17,19 @@ class CardComponent extends HTMLElement {
         subTitle: "Sample Card Sub Title",
         description: "This is a sample description for the card component.",
         image: "https://via.placeholder.com/150",
-        button : "Click Me!",
-        link : "https://www.google.com/, Google it"
+        button: "Click Me!",
+        link: "https://www.google.com, Google it",
+        showImage: true,    // New property for image visibility
+        showTitle: true,     // New property for title visibility
+        showSubTitle: true,  // New property for subtitle visibility
+        showDescription: true,// New property for description visibility
+        showButton: true,    // New property for button visibility
+        showLink: true       // New property for link visibility
     };
 
     data = {};
-    config = {};    
+    config = {};
+
     constructor() {
         super();
         this.data = { ...this.defaultData };
@@ -48,9 +55,8 @@ class CardComponent extends HTMLElement {
 
         this.renderComponent();
     }
-    
-    //check if user has provided some data 
-    updateData(){
+
+    updateData() {
         const updatedData = JSON.parse(this.getAttribute('data'));
         this.data = updatedData || this.defaultData;
         console.log(this.data);
@@ -58,44 +64,51 @@ class CardComponent extends HTMLElement {
 
     renderComponent() {
         this.innerHTML = '';
-        const wrapperElm = this.createElement('div', this.config.cardContainerClass);
+        this.className = this.config.cardContainerClass;
 
-        const wrapperElmWidth = getComputedStyle(wrapperElm).width !='auto'? getComputedStyle(wrapperElm).width.trim() : '300px';
-        wrapperElm.style.width = `${parseInt(wrapperElmWidth)}px`;
-        this.style.display = 'inline-block'
+        const wrapperElmWidth = getComputedStyle(this).width !== 'auto' ? getComputedStyle(this).width.trim() : '300px';
+        this.style.width = `${parseInt(wrapperElmWidth)}px`;
+        this.style.display = 'inline-block';
 
-        if (this.data.image) {
+        if (this.data.showImage && this.data.image) {
             const img = this.createElement('img', this.config.imageClass);
             img.src = this.data.image;
-            wrapperElm.appendChild(img);
+            this.appendChild(img);
         }
 
         const cardBody = this.createElement('div', this.config.cardBodyClass);
-        const title = this.createElement('h5', this.config.titleClass, this.data.title);
-        const description = this.createElement('p', this.config.textClass, this.data.description);
         
-        cardBody.appendChild(title);
-        if (this.data.subTitle) {
+        if (this.data.showTitle) {
+            const title = this.createElement('h5', this.config.titleClass, this.data.title);
+            cardBody.appendChild(title);
+        }
+        
+        if (this.data.showSubTitle && this.data.subTitle) {
             const subTitle = this.createElement('h6', this.config.subTitleClass, this.data.subTitle);
             cardBody.appendChild(subTitle);
         }
-        cardBody.appendChild(description);
 
-        if (this.data.button) {
+        if (this.data.showDescription) {
+            const description = this.createElement('p', this.config.textClass, this.data.description);
+            cardBody.appendChild(description);
+        }
+
+        if (this.data.showButton && this.data.button) {
             const button = this.createElement('button', this.config.buttonClass, this.data.button);
             cardBody.appendChild(button);
         }
-        if (this.data.link) {
+        
+        if (this.data.showLink && this.data.link) {
             console.log(this.data.link);
             const linkContent = this.data.link;
             const linkContSeparated = linkContent.split(",");
-        
-            if (linkContSeparated.length == 2) {
-                const url = linkContSeparated[0].trim(); 
-                const linkText = linkContSeparated[1].trim(); 
-        
+
+            if (linkContSeparated.length === 2) {
+                const url = linkContSeparated[0].trim();
+                const linkText = linkContSeparated[1].trim();
+
                 const link = this.createElement('a', this.config.linkClass, linkText);
-                link.href = url; // Set the href to the URL
+                link.href = url;
                 link.target = '_blank';
                 link.style.display = 'block';
                 link.style.margin = '0.7rem 0';
@@ -104,10 +117,8 @@ class CardComponent extends HTMLElement {
                 console.error("Link data is not formatted correctly.");
             }
         }
-        
-        wrapperElm.appendChild(cardBody);
-        this.appendChild(wrapperElm);
 
+        this.appendChild(cardBody);
     }
 
     createElement(tag, className, content) {
