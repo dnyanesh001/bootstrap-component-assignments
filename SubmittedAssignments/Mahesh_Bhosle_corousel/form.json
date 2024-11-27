@@ -125,40 +125,45 @@
                 }
               },
               {
-                "key": "caption.title",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Caption Title",
-                  "placeholder": "Enter caption title"
-                }
-              },
-              {
-                "key": "caption.subtitle",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Caption Subtitle",
-                  "placeholder": "Enter caption subtitle"
-                }
-              },
-              {
-                "key": "caption.text",
-                "type": "textarea",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Caption Text",
-                  "placeholder": "Enter caption text"
-                }
-              },
-              {
-                "key": "caption.titleLink",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Caption Title Link",
-                  "placeholder": "https://example.com"
-                }
+                "key": "caption",
+                "fieldGroup": [
+                  {
+                    "key": "caption.title",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Title",
+                      "placeholder": "Enter caption title"
+                    }
+                  },
+                  {
+                    "key": "caption.subtitle",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Subtitle",
+                      "placeholder": "Enter caption subtitle"
+                    }
+                  },
+                  {
+                    "key": "caption.text",
+                    "type": "textarea",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Text",
+                      "placeholder": "Enter caption text"
+                    }
+                  },
+                  {
+                    "key": "caption.titleLink",
+                    "type": "input",
+                    "className": "col-12",
+                    "templateOptions": {
+                      "label": "Caption Title Link",
+                      "placeholder": "https://example.com"
+                    }
+                  }
+                ]
               }
             ]
           }
