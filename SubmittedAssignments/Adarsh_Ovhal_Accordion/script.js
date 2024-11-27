@@ -11,13 +11,27 @@ class AccordionComponent extends HTMLElement {
       elementClasses: 'border rounded',
  
     };
-  
+    
     defaultData = {
-      heading: "Default Heading",
-      subHeading: "Default Subheading",
-      description: "This is a default accordion description.",
-      links: [],
-      accordionData: []
+      heading: "My Custom Accordion sgr",
+      subHeading: "Additional Information sfrs",
+      description: "Here is a custom accordion built using Web Components and Bootstrap seer.",
+      links: [{label: "Gmail", url: "https://mail.google.com/"},
+        {label: "GitHub", url: "https://github.com/"}],
+      accordionData: [
+        {
+          heading: "Accordion Item 1 sfs",
+          body: "This is the content of the first accordion item sfss.",
+          table: [
+            {srNo: 1, name: "Adarsh Ovhal", email: "adarshovhal@gmail.com"},
+            {srNo: 2, name: "Shirish Panchal", email: "shirish@gmail.com"}
+          ]
+        },
+        {
+          heading: "Accordion Item 2",
+          body: "This is the content of the second accordion item."
+        }
+      ]
     };
   
     config = {};
