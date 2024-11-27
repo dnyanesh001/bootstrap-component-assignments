@@ -1,99 +1,131 @@
 {
-    "fields": [
+  "fields": [
+    {
+      "key": "heading",
+      "type": "input",
+      "templateOptions": {
+        "label": "Heading",
+        "placeholder": "Enter Heading"
+      }
+    },
+    {
+      "key": "subHeading",
+      "type": "input",
+      "templateOptions": {
+        "label": "Subheading",
+        "placeholder": "Enter Subheading"
+      }
+    },
+    {
+      "key": "description",
+      "type": "textarea",
+      "templateOptions": {
+        "label": "Description",
+        "placeholder": "Enter Description"
+      }
+    },
+    {
+      "key": "links",
+      "type": "input",
+      "templateOptions": {
+        "label": "URL",
+        "placeholder": "Enter URL"
+      }
+    },
+    {
+      "key": "accordionData",
+      "type": "input",
+      "templateOptions": {
+        "label": "Accordion Data",
+        "placeholder": "Enter Accordion Data"
+      }
+    },
+    {
+      "key": "config.animation",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Animation"
+      }
+    },
+    {
+      "key": "config.isOpen",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Is Open"
+      }
+    },
+    {
+      "key": "config.closeOthers",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Close Others"
+      }
+    },
+    {
+      "key": "config.isFlush",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Is Flush"
+      }
+    },
+    {
+      "key": "config.bgColor",
+      "type": "input",
+      "templateOptions": {
+        "label": "Background Color",
+        "placeholder": "Enter Background Color"
+      }
+    },
+    {
+      "key": "config.alternateBg",
+      "type": "input",
+      "templateOptions": {
+        "label": "Alternate Background",
+        "placeholder": "Enter Alternate Background"
+      }
+    },
+    {
+      "key": "config.elementClasses",
+      "type": "input",
+      "templateOptions": {
+        "label": "Element Classes",
+        "placeholder": "Enter Element Classes"
+      }
+    }
+  ],
+  "formData": {
+    "config": {
+      "isFlush": true,
+      "isOpen": true,
+      "closeOthers": true,
+      "bgColor": "grey",
+      "alternateBg": "#ffffff",
+      "elementClasses": "custom-border rounded p-2"
+    },
+    "data": [
       {
-        "key": "heading",
-        "type": "input",
-        "templateOptions": {
-          "label": "heading",
-          "placeholder": "Enter Heading"
-        }
-      },
-      {
-        "key": "subHeading",
-        "type": "input",
-        "templateOptions": {
-          "label": "subHeading",
-          "placeholder": "Enter subHeading"
-        }
-      },
-      {
-        "key": "description",
-        "type": "textarea",
-        "templateOptions": {
-          "label": "Description",
-          "placeholder": "Enter description"
-        }
-      },
-      {
-        "key": "links",
-        "type": "input",
-        "templateOptions": {
-          "label": "URL",
-          "placeholder": "Enter URL"
-        }
-      },
-      {
-        "key": "accordionData",
-        "type": "input",
-        "templateOptions": {
-          "label": "accordionData",
-          "placeholder": "Enter accordionData"
-        }
-      },
-      {
-        "key": "config.animation",
-        "type": "checkbox",
-        "templateOptions": {
-          "label": "animation"
-         
-        }
-      },
-      {
-        "key": "config.isOpen",
-        "type": "checkbox",
-        "templateOptions": {
-          "label": "isOpen"
-          
-        }
-      },
-      {
-        "key": "config.closeOthers",
-        "type": "checkbox",
-        "templateOptions": {
-          "label": "closeOthers"
-        }
-      },
-      {
-        "key": "config.isFlush",
-        "type": "checkbox",
-        "templateOptions": {
-          "label": "isFlush"
-        }
-      },
-      {
-        "key": "config.bgColor",
-        "type": "input",
-        "templateOptions": {
-          "label": "bgColor",
-          "placeholder": "Enter  bgColor"
-        }
-      },
-      {
-        "key": "config.alternateBg",
-        "type": "input",
-        "templateOptions": {
-          "label": " alternateBg",
-          "placeholder": "Enter  alternateBg"
-        }
-      },
-      {
-        "key": "config.elementClasses",
-        "type": "input",
-        "templateOptions": {
-          "label": "elementClasses",
-          "placeholder": "Enter elementClasses"
-        }
+        "heading": "My Custom Accordion",
+        "subHeading": "Additional Information",
+        "description": "Here is a custom accordion built using Web Components and Bootstrap.",
+        "links": [
+          { "label": "Gmail", "url": "https://mail.google.com/" },
+          { "label": "GitHub", "url": "https://github.com/" }
+        ],
+        "accordionData": [
+          {
+            "heading": "Accordion Item 1",
+            "body": "This is the content of the first accordion item.",
+            "table": [
+              { "srNo": 1, "name": "Adarsh Ovhal", "email": "adarshovhal@gmail.com" },
+              { "srNo": 2, "name": "Shirish Panchal", "email": "shirish@gmail.com" }
+            ]
+          },
+          {
+            "heading": "Accordion Item 2",
+            "body": "This is the content of the second accordion item."
+          }
+        ]
       }
     ]
   }
-  
+}
