@@ -11,13 +11,12 @@
         },
         "fieldGroup": [
           {
+            "key": "config",
             "templateOptions": {
               "label": "Config"
             },
-            "fieldGroup": [
-              {
-                "key": "config",
-                "fieldGroup": [
+            "fieldGroupClassName":"row",
+               "fieldGroup": [
                   {
                     "key": "carouselClass",
                     "type": "input",
@@ -97,8 +96,8 @@
                     }
                   }
                 ]
-              }
-            ]
+              
+            
           },
           {
             "key": "data",
@@ -165,6 +164,7 @@
           }
         ]
       }
+      
     ],
     "formData": {
       "config ": {
