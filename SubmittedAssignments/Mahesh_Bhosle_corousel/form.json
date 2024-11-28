@@ -112,11 +112,10 @@
             "fieldGroup": [
               {
                 "key": "src",
-                "type": "input",
+                "type": "file-manager",
                 "className": "col-12",
                 "templateOptions": {
-                  "label": "Image URL",
-                  "placeholder": "https://via.placeholder.com/800x400?text=Slide"
+                  "label": "Image URL"
                 }
               },
               {
@@ -168,8 +167,47 @@
                     }
                   }
                 ]
+              },
+              {
+                "key": "buttons",
+                "type": "repeat",
+                "templateOptions": {
+                  "label": "Add Button"
+                },
+                "fieldArray": {
+                  "fieldGroup": [
+                    {
+                      "key": "text",
+                      "type": "input",
+                      "className": "col-12",
+                      "templateOptions": {
+                        "label": "Button Text",
+                        "placeholder": "Enter button text"
+                      }
+                    },
+                    {
+                      "key": "link",
+                      "type": "input",
+                      "className": "col-12",
+                      "templateOptions": {
+                        "label": "Button Link",
+                        "placeholder": "Enter button link (URL)"
+                      }
+                    },
+                    {
+                      "key": "class",
+                      "type": "input",
+                      "className": "col-12",
+                      "templateOptions": {
+                        "label": "Button CSS Class",
+                        "placeholder": "Enter button class"
+                      }
+                    }
+                  ]
+                }
               }
             ]
+         
           }
           }
         ]
