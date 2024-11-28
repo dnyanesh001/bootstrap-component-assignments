@@ -1,0 +1,181 @@
+{
+    "age-calculator": {
+        "formFields": [
+            {
+                "wrappers": [
+                    "tabs"
+                ],
+                "templateOptions": {
+                    "orientation": "horizontal",
+                    "navType": "nav nav-tabs"
+                },
+                "fieldGroup": [
+                    {
+                        "key": "config",
+                        "templateOptions": {
+                            "label": "Configuration"
+                        },
+                        "fieldGroupClassName": "row",
+                        "fieldGroup": [
+                            {
+                                "key": "wrapperClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Wrapper Class",
+                                    "placeholder": "Enter wrapper class"
+                                }
+                            },
+                            {
+                                "key": "headingClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Heading Class",
+                                    "placeholder": "Enter heading class"
+                                }
+                            },
+                            {
+                                "key": "formWrapperClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Form Wrapper Class",
+                                    "placeholder": "Enter form wrapper class"
+                                }
+                            },
+                            {
+                                "key": "formClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Form Class",
+                                    "placeholder": "Enter form class"
+                                }
+                            },
+                            {
+                                "key": "formGroupClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Form Group Class",
+                                    "placeholder": "Enter form group class"
+                                }
+                            },
+                            {
+                                "key": "formLabelClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Form Label Class",
+                                    "placeholder": "Enter form label class"
+                                }
+                            },
+                            {
+                                "key": "formControlClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Form Control Class",
+                                    "placeholder": "Enter form control class"
+                                }
+                            },
+                            {
+                                "key": "resultWrapperClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Result Wrapper Class",
+                                    "placeholder": "Enter result wrapper class"
+                                }
+                            },
+                            {
+                                "key": "resultHeadingClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Result Heading Class",
+                                    "placeholder": "Enter result heading class"
+                                }
+                            },
+                            {
+                                "key": "resultClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Result Class",
+                                    "placeholder": "Enter result class"
+                                }
+                            },
+                            {
+                                "key": "resetButtonClass",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Reset Button Class",
+                                    "placeholder": "Enter reset button class"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "data",
+                        "templateOptions": {
+                            "label": "Data"
+                        },
+                        "fieldGroupClassName": "row",
+                        "fieldGroup": [
+                            {
+                                "key": "heading",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Heading",
+                                    "placeholder": "Enter heading"
+                                }
+                            },
+                            {
+                                "key": "dobLabel",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Date of Birth Label",
+                                    "placeholder": "Enter date of birth label"
+                                }
+                            },
+                            {
+                                "key": "currentDateLabel",
+                                "type": "input",
+                                "className": "col-12",
+                                "templateOptions": {
+                                    "label": "Current Date Label",
+                                    "placeholder": "Enter current date label"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "formData": {
+            "config": {
+                "wrapperClass": "card container py-4 col-md-3 bg-light",
+                "headingClass": "text-primary border-bottom pb-2 text-center",
+                "formWrapperClass": "card-body",
+                "formClass": "form",
+                "formGroupClass": "mb-3",
+                "formLabelClass": "form-label",
+                "formControlClass": "form-control",
+                "resultWrapperClass": "card mt-3",
+                "resultHeadingClass": "mb-3 h3",
+                "resultClass": "btn btn-primary p-3 col-md-3 container text-center py-4",
+                "resetButtonClass": "ms-3 btn btn-outline-danger "
+            },
+            "data": {
+                "heading": "Age Calculator",
+                "dobLabel": "Date of Birth",
+                "currentDateLabel": "Current Date"
+            }
+        }
+    }
+}
