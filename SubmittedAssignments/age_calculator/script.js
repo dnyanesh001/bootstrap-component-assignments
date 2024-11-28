@@ -207,7 +207,7 @@ class AgeCalculator extends HTMLElement {
 
 customElements.define('age-calculator', AgeCalculator);
 
-if (!window.customElements) window.customElements = [];
+if (!window.customElementsList) window.customElementsList = [];
 
-window.customElements.push({ component: 'age-calculator', componentClass: AgeCalculator })
+window.customElementsList.push({ component: 'age-calculator', componentClass: AgeCalculator })
 
