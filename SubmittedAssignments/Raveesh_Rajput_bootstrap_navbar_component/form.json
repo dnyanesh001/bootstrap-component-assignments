@@ -1,260 +1,436 @@
 {
-    "dataFields": [
-      {
-        "key": "brand",
-        "fieldGroup": [
+  "navbar-component": {
+      "formFields": [
           {
-            "key": "src",
-            "type": "input",
-            "templateOptions": { "label": "Brand Logo Src (URL)", "placeholder": "Enter image URL" }
-          },
-          {
-            "key": "text",
-            "type": "input",
-            "templateOptions": { "label": "Brand Text", "placeholder": "Enter brand name", "required": true }
-          },
-          {
-            "key": "href",
-            "type": "input",
-            "templateOptions": { "label": "Brand Href", "placeholder": "Enter link" }
+              "wrappers": [
+                  "tabs"
+              ],
+              "templateOptions": {
+                  "orientation": "horizontal",
+                  "navType": "nav nav-tabs"
+              },
+              "fieldGroup": [
+                  {
+                      "key": "config",
+                      "templateOptions": {
+                          "label": "Configuration"
+                      },
+                      "fieldGroupClassName": "row",
+                      "fieldGroup": [
+                          {
+                              "key": "navbar",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Navbar Classes",
+                                "placeholder": "Enter navbar classes",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "navbodyClass",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Nav Body Classes",
+                                "placeholder": "Enter nav body classes",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "brand",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Brand Class",
+                                "placeholder": "Enter brand class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "brandlogo",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Brand Logo",
+                                "placeholder": "Enter brand logo",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "toggler",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Toggler Class",
+                                "placeholder": "Enter toggler class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "togglerIcon",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Toggler Icon Class",
+                                "placeholder": "Enter toggler icon class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "collapse",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Collapse Class",
+                                "placeholder": "Enter collapse class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "navItem",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Nav Item Class",
+                                "placeholder": "Enter nav item class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "ulClass",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "UL Class",
+                                "placeholder": "Enter UL class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "navLink",
+                              "type": "repeat",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Nav Link Classes",
+                                "addText": "Add Navigation Classes",
+                                "required": true
+                              },
+                              "fieldArray": {
+                                "fieldGroup": [
+                                  {
+                                    "key": "default",
+                                    "type": "input",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Default Class",
+                                      "placeholder": "Enter default nav link class",
+                                      "required": true
+                                    }
+                                  },
+                                  {
+                                    "key": "active",
+                                    "type": "input",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Active Class",
+                                      "placeholder": "Enter active nav link class",
+                                      "required": true
+                                    }
+                                  },
+                                  {
+                                    "key": "disabled",
+                                    "type": "input",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Disabled Class",
+                                      "placeholder": "Enter disabled nav link class",
+                                      "required": true
+                                    }
+                                  },
+                                  {
+                                    "key": "dropdownToggle",
+                                    "type": "input",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Dropdown Toggle Class",
+                                      "placeholder": "Enter dropdown toggle class",
+                                      "required": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": "dropdownMenu",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Dropdown Menu Class",
+                                "placeholder": "Enter dropdown menu class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "dropdownItem",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Dropdown Item Class",
+                                "placeholder": "Enter dropdown item class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "searchForm",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Search Form Class",
+                                "placeholder": "Enter search form class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "searchInput",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Search Input Class",
+                                "placeholder": "Enter search input class",
+                                "required": true
+                              }
+                            },
+                            {
+                              "key": "searchButton",
+                              "type": "input",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Search Button Class",
+                                "placeholder": "Enter search button class",
+                                "required": true
+                              }
+                          }                              
+                      ]
+                  },
+                  {
+                      "key": "data",
+                      "templateOptions": {
+                          "label": "Data"
+                      },
+                      "fieldGroupClassName": "row",
+                      "fieldGroup": [
+                          {
+                              "key": "brand",
+                              "fieldGroup": [
+                                {
+                                  "key": "src",
+                                  "type": "input",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Brand Logo Src (URL)",
+                                    "placeholder": "Enter image URL"
+                                  }
+                                },
+                                {
+                                  "key": "text",
+                                  "type": "input",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Brand Text",
+                                    "placeholder": "Enter brand name",
+                                    "required": true
+                                  }
+                                },
+                                {
+                                  "key": "href",
+                                  "type": "input",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Brand Href",
+                                    "placeholder": "Enter link"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "key": "toggler",
+                              "fieldGroup": [
+                                {
+                                  "key": "ariaControls",
+                                  "type": "input",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Aria Controls",
+                                    "placeholder": "Enter aria-controls"
+                                  }
+                                },
+                                {
+                                  "key": "ariaExpanded",
+                                  "type": "checkbox",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Aria Expanded"
+                                  }
+                                },
+                                {
+                                  "key": "ariaLabel",
+                                  "type": "input",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Aria Label",
+                                    "placeholder": "Enter aria-label"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "key": "collapse",
+                              "fieldGroup": [
+                                {
+                                  "key": "id",
+                                  "type": "input",
+                                  "className": "col-12",
+                                  "templateOptions": {
+                                    "label": "Collapse ID",
+                                    "placeholder": "Enter collapse ID"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "key": "navItems",
+                              "type": "repeat",
+                              "className": "col-12",
+                              "templateOptions": {
+                                "label": "Navigation Items",
+                                "addText": "Add Navigation Item"
+                              },
+                              "fieldArray": {
+                                "fieldGroup": [
+                                  {
+                                    "key": "href",
+                                    "type": "input",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Href",
+                                      "placeholder": "Enter link"
+                                    }
+                                  },
+                                  {
+                                    "key": "text",
+                                    "type": "input",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Text",
+                                      "placeholder": "Enter link text"
+                                    }
+                                  },
+                                  {
+                                    "key": "isActive",
+                                    "type": "checkbox",
+                                    "className": "col-12",
+                                    "templateOptions": {
+                                      "label": "Is Active"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                            
+                      ]
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "key": "toggler",
-        "fieldGroup": [
-          {
-            "key": "ariaControls",
-            "type": "input",
-            "templateOptions": { "label": "Aria Controls", "placeholder": "Enter aria-controls" }
-          },
-          {
-            "key": "ariaExpanded",
-            "type": "checkbox",
-            "templateOptions": { "label": "Aria Expanded" }
-          },
-          {
-            "key": "ariaLabel",
-            "type": "input",
-            "templateOptions": { "label": "Aria Label", "placeholder": "Enter aria-label" }
-          }
-        ]
-      },
-      {
-        "key": "collapse",
-        "fieldGroup": [
-          {
-            "key": "id",
-            "type": "input",
-            "templateOptions": { "label": "Collapse ID", "placeholder": "Enter collapse ID" }
-          }
-        ]
-      },
-      {
-        "key": "navItems",
-        "type": "repeat",
-        "templateOptions": {
-          "label": "Navigation Items",
-          "addText": "Add Navigation Item"
-        },
-        "fieldArray": {
-          "fieldGroup": [
-            {
-              "key": "href",
-              "type": "input",
-              "templateOptions": { "label": "Href", "placeholder": "Enter link" }
+      ],
+      "formData": {
+          "config": {
+              "navbar": "navbar navbar-expand-lg navbar-light bg-light",
+              "navbodyClass": "container-fluid",
+              "brand": "navbar-brand",
+              "brandlogo": "logo",
+              "toggler": "navbar-toggler",
+              "togglerIcon": "navbar-toggler-icon",
+              "collapse": "collapse navbar-collapse",
+              "navItem": "nav-item",
+              "ulClass": "navbar-nav",
+              "navLink": {
+                "default": "nav-link",
+                "active": "nav-link active",
+                "disabled": "nav-link disabled",
+                "dropdownToggle": "nav-link dropdown-toggle"
+              },
+              "dropdownMenu": "dropdown-menu",
+              "dropdownItem": "dropdown-item",
+              "searchForm": "d-flex",
+              "searchInput": "form-control me-2",
+              "searchButton": "btn btn-outline-success"
             },
-            {
-              "key": "text",
-              "type": "input",
-              "templateOptions": { "label": "Text", "placeholder": "Enter link text" }
-            },
-            {
-              "key": "isActive",
-              "type": "checkbox",
-              "templateOptions": { "label": "Is Active" }
+          "data": {
+              "brand": {
+                "src": "/img/bird-logo.avif",
+                "text": "BRAND",
+                "href": "#"
+              },
+              "toggler": {
+                "ariaControls": "navbarSupportedContent",
+                "ariaExpanded": false,
+                "ariaLabel": "Toggle navigation"
+              },
+              "collapse": {
+                "id": "navbarSupportedContent"
+              },
+              "navItems": [
+                {
+                  "link": {
+                    "href": "#",
+                    "text": "Home",
+                    "ariaCurrent": "page",
+                    "isActive": true
+                  }
+                },
+                {
+                  "link": {
+                    "href": "#",
+                    "text": "Link"
+                  }
+                },
+                {
+                  "link": {
+                    "href": "#",
+                    "text": "Dropdown",
+                    "isDropdown": true
+                  },
+                  "dropdown": [
+                    {
+                      "href": "#",
+                      "text": "Action"
+                    },
+                    {
+                      "href": "#",
+                      "text": "Another action"
+                    },
+                    {
+                      "href": "#",
+                      "text": "Something else here"
+                    }
+                  ]
+                },
+                {
+                  "link": {
+                    "href": "#",
+                    "text": "Disabled",
+                    "isDisabled": true
+                  }
+                }
+              ],
+              "search": {
+                "inputPlaceholder": "Search",
+                "inputAriaLabel": "Search",
+                "buttonText": "Search"
+              }
             }
-          ]
-        }
+            
       }
-    ]
-  ,
-    "configFields": [
-      {
-        "key": "navbar",
-        "type": "input",
-        "templateOptions": {
-          "label": "Navbar Classes",
-          "placeholder": "Enter navbar classes",
-          "required": true
-        }
-      },
-      {
-        "key": "navbodyClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "Nav Body Classes",
-          "placeholder": "Enter nav body classes",
-          "required": true
-        }
-      },
-      {
-        "key": "brand",
-        "type": "input",
-        "templateOptions": {
-          "label": "Brand Class",
-          "placeholder": "Enter brand class",
-          "required": true
-        }
-      },
-      {
-        "key": "brandlogo",
-        "type": "input",
-        "templateOptions": {
-          "label": "Brand Logo",
-          "placeholder": "Enter brand logo",
-          "required": true
-        }
-      },
-      {
-        "key": "toggler",
-        "type": "input",
-        "templateOptions": {
-          "label": "Toggler Class",
-          "placeholder": "Enter toggler class",
-          "required": true
-        }
-      },
-      {
-        "key": "togglerIcon",
-        "type": "input",
-        "templateOptions": {
-          "label": "Toggler Icon Class",
-          "placeholder": "Enter toggler icon class",
-          "required": true
-        }
-      },
-      {
-        "key": "collapse",
-        "type": "input",
-        "templateOptions": {
-          "label": "Collapse Class",
-          "placeholder": "Enter collapse class",
-          "required": true
-        }
-      },
-      {
-        "key": "navItem",
-        "type": "input",
-        "templateOptions": {
-          "label": "Nav Item Class",
-          "placeholder": "Enter nav item class",
-          "required": true
-        }
-      },
-      {
-        "key": "ulClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "UL Class",
-          "placeholder": "Enter UL class",
-          "required": true
-        }
-      },
-      {
-        "key": "navLink",
-        "type": "repeat",
-        "templateOptions": {
-          "label": "Nav Link Classes",
-          "addText": "Add Navigation Classes",
-          "required": true
-        },
-        "fieldArray": {
-          "fieldGroup": [
-            {
-              "key": "default",
-              "type": "input",
-              "templateOptions": {
-                "label": "Default Class",
-                "placeholder": "Enter default nav link class",
-                "required": true
-              }
-            },
-            {
-              "key": "active",
-              "type": "input",
-              "templateOptions": {
-                "label": "Active Class",
-                "placeholder": "Enter active nav link class",
-                "required": true
-              }
-            },
-            {
-              "key": "disabled",
-              "type": "input",
-              "templateOptions": {
-                "label": "Disabled Class",
-                "placeholder": "Enter disabled nav link class",
-                "required": true
-              }
-            },
-            {
-              "key": "dropdownToggle",
-              "type": "input",
-              "templateOptions": {
-                "label": "Dropdown Toggle Class",
-                "placeholder": "Enter dropdown toggle class",
-                "required": true
-              }
-            }
-          ]
-        }
-      },
-      {
-        "key": "dropdownMenu",
-        "type": "input",
-        "templateOptions": {
-          "label": "Dropdown Menu Class",
-          "placeholder": "Enter dropdown menu class",
-          "required": true
-        }
-      },
-      {
-        "key": "dropdownItem",
-        "type": "input",
-        "templateOptions": {
-          "label": "Dropdown Item Class",
-          "placeholder": "Enter dropdown item class",
-          "required": true
-        }
-      },
-      {
-        "key": "searchForm",
-        "type": "input",
-        "templateOptions": {
-          "label": "Search Form Class",
-          "placeholder": "Enter search form class",
-          "required": true
-        }
-      },
-      {
-        "key": "searchInput",
-        "type": "input",
-        "templateOptions": {
-          "label": "Search Input Class",
-          "placeholder": "Enter search input class",
-          "required": true
-        }
-      },
-      {
-        "key": "searchButton",
-        "type": "input",
-        "templateOptions": {
-          "label": "Search Button Class",
-          "placeholder": "Enter search button class",
-          "required": true
-        }
-      }
-    ]
   }
-  
+}
