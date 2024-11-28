@@ -39,7 +39,12 @@ class CarouselElement extends HTMLElement {
                 subtitle: "Explore the Unseen",
                 text: "Some representative placeholder content for the first slide.",
                 titleLink: "https://example.com/first"
-            }
+            },
+            buttons:[
+                {"text": "Learn More","link": "https://example.com/new-button","class":"btn btn-danger  rounded-pill"},
+                {"text": "Get Started","link": "https://example.com/get-started"},
+                {"text": "Contact Us","link": "https://example.com/contact","class":"btn btn-success  rounded-pill"}
+            ]
         },
         {
             src: "https://via.placeholder.com/800x400?text=Second+Slide",
@@ -49,7 +54,13 @@ class CarouselElement extends HTMLElement {
                 subtitle: "Look Beyond",
                 text: "Some representative placeholder content for the second slide.",
                 titleLink: "https://example.com/second"
-            }
+            }, 
+            buttons:[
+                {"text": "Learn More","link": "https://example.com/new-button","class":"btn btn-danger  rounded-pill"},
+                {"text": "Get Started","link": "https://example.com/get-started"},
+                {"text": "Contact Us","link": "https://example.com/contact","class":"btn btn-success  rounded-pill"}
+            ]
+
         }
     ];
 
