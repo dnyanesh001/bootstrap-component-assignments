@@ -98,14 +98,12 @@
             ]
           },
           {
-            "key": "data",
-            "type":"repeat",
+            "key": "data", 
+            "type": "repeat", 
             "templateOptions": {
-              "label": "Data",
-              "addText":"Add Data"
+              "addText": "Add Item"
             },
             "fieldArray": {
-              "fieldGroupClassName": "row",
               "fieldGroup": [
                 {
                   "key": "src",
