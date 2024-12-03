@@ -92,7 +92,8 @@
                 "type": "checkbox",
                 "className": "col-12",
                 "templateOptions": {
-                  "label": "Enable Buttons"
+                  "label": "Enable Buttons",
+                  
                 }
               }
             ]
@@ -169,7 +170,8 @@
                   "key": "buttons",
                   "type": "repeat",
                   "templateOptions": {
-                    "label": "Add Button"
+                    "label": "Add Button",
+                    "addText":"Add Button"
                   },
                   "fieldArray": {
                     "fieldGroup": [
