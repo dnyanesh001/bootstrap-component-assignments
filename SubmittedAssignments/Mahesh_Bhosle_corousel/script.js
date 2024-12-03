@@ -68,6 +68,8 @@ class CarouselElement extends HTMLElement {
         super();
         this.config = { ...this.defaultConfig };
         this.data = [...this.defaultData];
+        console.log('constructor',this.data);
+        
     }
 
     connectedCallback() {
@@ -86,6 +88,8 @@ class CarouselElement extends HTMLElement {
             try {
                 const userData = JSON.parse(newValue);
                 this.data = Array.isArray(userData) ? userData : this.defaultData;
+                console.log('attributeChangedCallback', this.data );
+                
             } catch (e) {
                 console.error("Invalid data JSON:", e);
             }
