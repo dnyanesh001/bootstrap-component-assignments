@@ -1,59 +1,144 @@
 {
-    "fields": [
+  "list-group-component": {
+    "formFields": [
       {
-        "key": "title",
-        "type": "input",
+        "wrappers": [
+          "tabs"
+        ],
         "templateOptions": {
-          "label": "Card Title",
-          "placeholder": "Enter card title",
-          "required": true
-        }
-      },
-      {
-        "key": "description",
-        "type": "textarea",
-        "templateOptions": {
-          "label": "Description",
-          "placeholder": "Enter card description",
-          "required": true
-        }
-      },
-      {
-        "key": "image",
-        "type": "input",
-        "templateOptions": {
-          "label": "Image URL",
-          "placeholder": "Enter image URL",
-          "required": true
-        }
-      },
-      {
-        "key": "config.imageClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "Image CSS Class",
-          "placeholder": "Enter CSS class for image",
-          "required": true
-        }
-      },
-      {
-        "key": "config.titleClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "Title CSS Class",
-          "placeholder": "Enter CSS class for title",
-          "required": true
-        }
-      },
-      {
-        "key": "config.textClass",
-        "type": "input",
-        "templateOptions": {
-          "label": "Text CSS Class",
-          "placeholder": "Enter CSS class for text",
-          "required": true
-        }
+          "orientation": "horizontal",
+          "navType": "nav nav-tabs"
+        },
+        "fieldGroup": [
+          {
+            "key": "config",
+            "templateOptions": {
+              "label": "Config"
+            },
+            "fieldGroupClassName": "row",
+            "fieldGroup": [
+              {
+                "key": "listGroupClass",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "List Group CSS Class",
+                  "placeholder": "list-group"
+                }
+              },
+              {
+                "key": "itemClass",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "List Item CSS Class",
+                  "placeholder": "list-group-item"
+                }
+              },
+              {
+                "key": "buttons",
+                "type": "checkbox",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Enable Buttons"
+                }
+              }
+            ]
+          },
+          {
+            "key": "data",
+            "type": "repeat",
+            "templateOptions": {
+              "label": "List Items",
+              "addText": "Add List Item"
+            },
+            "fieldArray": {
+              "fieldGroupClassName": "row",
+              "fieldGroup": [
+                {
+                  "key": "title",
+                  "type": "input",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "Item Title",
+                    "placeholder": "Enter item title"
+                  }
+                },
+                {
+                  "key": "description",
+                  "type": "textarea",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "Description",
+                    "placeholder": "Enter item description"
+                  }
+                },
+                {
+                  "key": "button",
+                  "type": "repeat",
+                  "templateOptions": {
+                    "label": "Add Button"
+                  },
+                  "fieldArray": {
+                    "fieldGroup": [
+                      {
+                        "key": "text",
+                        "type": "input",
+                        "className": "col-12",
+                        "templateOptions": {
+                          "label": "Button Text",
+                          "placeholder": "Enter button text"
+                        }
+                      },
+                      {
+                        "key": "link",
+                        "type": "input",
+                        "className": "col-12",
+                        "templateOptions": {
+                          "label": "Button Link",
+                          "placeholder": "Enter button link (URL)"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "formData": {
+      "config": {
+        "listGroupClass": "list-group",
+        "itemClass": "list-group-item"
+      },
+      "data": [
+        {
+          "title": "Item 1",
+          "description": "This is the first item in the list group.",
+          "buttons": [
+            {
+              "text": "Learn More",
+              "link": "https://example.com/learn-more"
+            },
+            {
+              "text": "Contact Us",
+              "link": "https://example.com/contact"
+            }
+          ]
+        },
+        {
+          "title": "Item 2",
+          "description": "This is the second item in the list group.",
+          "buttons": [
+            {
+              "text": "Learn More",
+              "link": "https://example.com/learn-more"
+            }
+          ]
+        }
+      ]
+    }
   }
-  
+}
