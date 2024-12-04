@@ -1,132 +1,186 @@
 {
-  "accordion-component":{
-  "fields": [
-    {
-      "key": "heading",
-      "type": "input",
-      "templateOptions": {
-        "label": "Heading",
-        "placeholder": "Enter Heading"
-      }
-    },
-    {
-      "key": "subHeading",
-      "type": "input",
-      "templateOptions": {
-        "label": "Subheading",
-        "placeholder": "Enter Subheading"
-      }
-    },
-    {
-      "key": "description",
-      "type": "textarea",
-      "templateOptions": {
-        "label": "Description",
-        "placeholder": "Enter Description"
-      }
-    },
-    {
-      "key": "links",
-      "type": "input",
-      "templateOptions": {
-        "label": "URL",
-        "placeholder": "Enter URL"
-      }
-    },
-    {
-      "key": "accordionData",
-      "type": "input",
-      "templateOptions": {
-        "label": "Accordion Data",
-        "placeholder": "Enter Accordion Data"
-      }
-    },
-    {
-      "key": "config.animation",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Animation"
-      }
-    },
-    {
-      "key": "config.isOpen",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Is Open"
-      }
-    },
-    {
-      "key": "config.closeOthers",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Close Others"
-      }
-    },
-    {
-      "key": "config.isFlush",
-      "type": "checkbox",
-      "templateOptions": {
-        "label": "Is Flush"
-      }
-    },
-    {
-      "key": "config.bgColor",
-      "type": "input",
-      "templateOptions": {
-        "label": "Background Color",
-        "placeholder": "Enter Background Color"
-      }
-    },
-    {
-      "key": "config.alternateBg",
-      "type": "input",
-      "templateOptions": {
-        "label": "Alternate Background",
-        "placeholder": "Enter Alternate Background"
-      }
-    },
-    {
-      "key": "config.elementClasses",
-      "type": "input",
-      "templateOptions": {
-        "label": "Element Classes",
-        "placeholder": "Enter Element Classes"
-      }
-    }
-  ],
-  "formData": {
-    "config": {
-      "isFlush": true,
-      "isOpen": true,
-      "closeOthers": true,
-      "bgColor": "grey",
-      "alternateBg": "#ffffff",
-      "elementClasses": "custom-border rounded p-2"
-    },
-    "data": [
+  "accordion-element": {
+    "formFields": [
       {
-        "heading": "My Custom Accordion",
-        "subHeading": "Additional Information",
-        "description": "Here is a custom accordion built using Web Components and Bootstrap.",
-        "links": [
-          { "label": "Gmail", "url": "https://mail.google.com/" },
-          { "label": "GitHub", "url": "https://github.com/" }
+        "wrappers": [
+          "tabs"
         ],
-        "accordionData": [
+        "templateOptions": {
+          "orientation": "horizontal",
+          "navType": "nav nav-tabs"
+        },
+        "fieldGroup": [
           {
-            "heading": "Accordion Item 1",
-            "body": "This is the content of the first accordion item.",
-            "table": [
-              { "srNo": 1, "name": "Adarsh Ovhal", "email": "adarshovhal@gmail.com" },
-              { "srNo": 2, "name": "Shirish Panchal", "email": "shirish@gmail.com" }
+            "key": "config",
+            "templateOptions": {
+              "label": "Config"
+            },
+            "fieldGroupClassName": "row",
+            "fieldGroup": [
+              {
+                "key": "animation",
+                "type": "checkbox",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Enable Animation"
+                }
+              },
+              {
+                "key": "isOpen",
+                "type": "checkbox",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Is Accordion Open"
+                }
+              },
+              {
+                "key": "closeOthers",
+                "type": "checkbox",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Close Others"
+                }
+              },
+              {
+                "key": "isFlush",
+                "type": "checkbox",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Is Flush Style"
+                }
+              },
+              {
+                "key": "bgColor",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Background Color",
+                  "placeholder": "#f8f9fa"
+                }
+              },
+              {
+                "key": "alternateBg",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Alternate Background",
+                  "placeholder": "#ffffff"
+                }
+              },
+              {
+                "key": "elementClasses",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Element Classes",
+                  "placeholder": "border rounded"
+                }
+              }
             ]
           },
           {
-            "heading": "Accordion Item 2",
-            "body": "This is the content of the second accordion item."
+            "key": "data",
+            "type": "repeat",
+            "templateOptions": {
+              "label": "Accordion Data",
+              "addText": "Add Accordion Item"
+            },
+            "fieldArray": {
+              "fieldGroupClassName": "row",
+              "fieldGroup": [
+                {
+                  "key": "heading",
+                  "type": "input",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "Accordion Item Heading",
+                    "placeholder": "Enter Heading"
+                  }
+                },
+                {
+                  "key": "body",
+                  "type": "textarea",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "Accordion Item Body",
+                    "placeholder": "Enter Body Text"
+                  }
+                },
+                {
+                  "key": "table",
+                  "type": "repeat",
+                  "templateOptions": {
+                    "label": "Table Rows",
+                    "addText": "Add Table Row"
+                  },
+                  "fieldArray": {
+                    "fieldGroup": [
+                      {
+                        "key": "srNo",
+                        "type": "input",
+                        "className": "col-4",
+                        "templateOptions": {
+                          "label": "Serial Number"
+                        }
+                      },
+                      {
+                        "key": "name",
+                        "type": "input",
+                        "className": "col-4",
+                        "templateOptions": {
+                          "label": "Name"
+                        }
+                      },
+                      {
+                        "key": "email",
+                        "type": "input",
+                        "className": "col-4",
+                        "templateOptions": {
+                          "label": "Email"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
           }
         ]
       }
-    ]
-  }}
+    ],
+    "formData": {
+      "config": {
+        "animation": true,
+        "isOpen": false,
+        "closeOthers": true,
+        "isFlush": false,
+        "bgColor": "#f8f9fa",
+        "alternateBg": "#ffffff",
+        "elementClasses": "border rounded"
+      },
+      "data": [
+        {
+          "heading": "Accordion Item 1",
+          "body": "This is the content of the first accordion item.",
+          "table": [
+            {
+              "srNo": 1,
+              "name": "Adarsh Ovhal",
+              "email": "adarshovhal@gmail.com"
+            },
+            {
+              "srNo": 2,
+              "name": "Shirish Panchal",
+              "email": "shirish@gmail.com"
+            }
+          ]
+        },
+        {
+          "heading": "Accordion Item 2",
+          "body": "This is the content of the second accordion item.",
+          "table": []
+        }
+      ]
+    }
+  }
 }
