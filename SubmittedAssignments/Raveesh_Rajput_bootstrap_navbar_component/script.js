@@ -237,3 +237,5 @@ class Navbar extends HTMLElement {
 
 // Define the new element
 customElements.define('navbar-component', Navbar);
+if (!window.customElementsList) window.customElementsList = [];
+window.customElementsList.push({ component: 'navbar-component', componentClass: Navbar });
