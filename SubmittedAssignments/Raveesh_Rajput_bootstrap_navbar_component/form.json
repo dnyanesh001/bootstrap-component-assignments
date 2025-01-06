@@ -2,9 +2,7 @@
   "navbar-component": {
     "formFields": [
       {
-        "wrappers": [
-          "tabs"
-        ],
+        "wrappers": ["tabs"],
         "templateOptions": {
           "orientation": "horizontal",
           "navType": "nav nav-tabs"
@@ -27,39 +25,12 @@
                 }
               },
               {
-                "key": "navbodyClass",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Nav Body Class",
-                  "placeholder": "Enter nav body classes"
-                }
-              },
-              {
                 "key": "brand",
                 "type": "input",
                 "className": "col-12",
                 "templateOptions": {
                   "label": "Brand Class",
                   "placeholder": "Enter brand class"
-                }
-              },
-              {
-                "key": "brandlogo",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Brand Logo",
-                  "placeholder": "Enter brand logo"
-                }
-              },
-              {
-                "key": "toggler",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Toggler Class",
-                  "placeholder": "Enter toggler class"
                 }
               },
               {
@@ -88,112 +59,6 @@
                   "label": "Nav Item Class",
                   "placeholder": "Enter nav item class"
                 }
-              },
-              {
-                "key": "ulClass",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "UL Class",
-                  "placeholder": "Enter UL class"
-                }
-              },
-              {
-                "key": "navLink",
-                "type": "repeat",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Nav Link Classes",
-                  "addText": "Add Navigation Classes"
-                },
-                "fieldArray": {
-                  "fieldGroup": [
-                    {
-                      "key": "default",
-                      "type": "input",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Default Class",
-                        "placeholder": "Enter default nav link class"
-                      }
-                    },
-                    {
-                      "key": "active",
-                      "type": "input",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Active Class",
-                        "placeholder": "Enter active nav link class"
-                      }
-                    },
-                    {
-                      "key": "disabled",
-                      "type": "input",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Disabled Class",
-                        "placeholder": "Enter disabled nav link class"
-                      }
-                    },
-                    {
-                      "key": "dropdownToggle",
-                      "type": "input",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Dropdown Toggle Class",
-                        "placeholder": "Enter dropdown toggle class"
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "key": "data",
-            "templateOptions": {
-              "label": "Data"
-            },
-            "fieldGroupClassName": "row",
-            "fieldGroup": [
-              {
-                "key": "navItems",
-                "type": "repeat",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Navigation Items",
-                  "addText": "Add Navigation Item"
-                },
-                "fieldArray": {
-                  "fieldGroup": [
-                    {
-                      "key": "href",
-                      "type": "input",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Href",
-                        "placeholder": "Enter link"
-                      }
-                    },
-                    {
-                      "key": "text",
-                      "type": "input",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Text",
-                        "placeholder": "Enter link text"
-                      }
-                    },
-                    {
-                      "key": "isActive",
-                      "type": "checkbox",
-                      "className": "col-12",
-                      "templateOptions": {
-                        "label": "Is Active"
-                      }
-                    }
-                  ]
-                }
               }
             ]
           }
@@ -203,36 +68,10 @@
     "formData": {
       "config": {
         "navbar": "navbar navbar-expand-lg navbar-light bg-light",
-        "navbodyClass": "container-fluid",
         "brand": "navbar-brand",
-        "brandlogo": "logo",
-        "toggler": "navbar-toggler",
         "togglerIcon": "navbar-toggler-icon",
         "collapse": "collapse navbar-collapse",
-        "navItem": "nav-item",
-        "ulClass": "navbar-nav",
-        "navLink": [
-          {
-            "default": "nav-link",
-            "active": "nav-link active",
-            "disabled": "nav-link disabled",
-            "dropdownToggle": "nav-link dropdown-toggle"
-          }
-        ]
-      },
-      "data": {
-        "navItems": [
-          {
-            "href": "#",
-            "text": "Home",
-            "isActive": true
-          },
-          {
-            "href": "#",
-            "text": "Link",
-            "isActive": false
-          }
-        ]
+        "navItem": "nav-item"
       }
     }
   }
