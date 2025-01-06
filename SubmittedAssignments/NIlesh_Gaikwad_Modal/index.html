@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Custom Components Example</title>
+</head>
+
+<body class="container">
+    <h2>Custom Components Example</h2>
+<!-- Example Usage of Modal Component -->
+ 
+<button id="openModal" class="btn btn-primary mt-4">Open Modal</button>
+<modal-component data='{
+    "title": "Dynamic Modal Title",
+    "tableData": [
+        {"product": "Laptop", "price": 1200, "brand": "Dell", "rating": 4.5},
+        {"product": "Smartphone", "price": 800, "brand": "Samsung", "rating": 4.7},
+        {"product": "Headphones", "price": 150, "brand": "Sony", "rating": 4.3},
+        {"product": "Monitor", "price": 300, "brand": "LG", "rating": 4.6}
+    ],
+    
+    "galleryImages": [
+        {"src": "https://via.placeholder.com/100", "alt": "Sample Image 1"},
+        {"src": "https://via.placeholder.com/100", "alt": "Sample Image 2"},
+        {"src": "https://via.placeholder.com/100", "alt": "Sample Image 3"}
+    ]
+}'
+ config='{
+    "modalClass": "modal",
+    "modalDialogClass": "modal-dialog modal-dialog-centered",
+    "modalContentClass": "modal-content",
+    "modalHeaderClass": "modal-header",
+    "modalTitleClass": "modal-title",
+    "modalBodyClass": "modal-body",
+    "modalFooterClass": "modal-footer",
+    "closeButtonClass": "close",
+    "modalOpenClass": "modal-open"
+}'></modal-component>
+
+
+<script src="./script.js"></script>
+<script>
+    document.getElementById("openModal").addEventListener("click", () => {
+        const modal = document.querySelector("modal-component");
+        modal.showModal();
+    });
+</script>
+</body>
+
+</html>

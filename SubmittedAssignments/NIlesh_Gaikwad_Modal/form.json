@@ -1,0 +1,159 @@
+{
+  "fields": [
+    {
+      "key": "title",
+      "type": "input",
+      "templateOptions": {
+        "label": "Modal Title",
+        "placeholder": "Enter modal title",
+        "required": true
+      }
+    },
+    {
+      "key": "description",
+      "type": "textarea",
+      "templateOptions": {
+        "label": "Description",
+        "placeholder": "Enter modal description",
+        "required": true
+      }
+    },
+    {
+      "key": "tableData",
+      "type": "repeat",
+      "templateOptions": {
+        "label": "Table Data",
+        "addText": "Add Row",
+        "fields": [
+          {
+            "key": "name",
+            "type": "input",
+            "templateOptions": {
+              "label": "Name",
+              "placeholder": "Enter name",
+              "required": true
+            }
+          },
+          {
+            "key": "age",
+            "type": "input",
+            "templateOptions": {
+              "label": "Age",
+              "placeholder": "Enter age",
+              "required": true
+            }
+          },
+          {
+            "key": "qualification",
+            "type": "input",
+            "templateOptions": {
+              "label": "Qualification",
+              "placeholder": "Enter qualification",
+              "required": true
+            }
+          },
+          {
+            "key": "email",
+            "type": "input",
+            "templateOptions": {
+              "label": "Email",
+              "placeholder": "Enter email",
+              "required": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "galleryImages",
+      "type": "repeat",
+      "templateOptions": {
+        "label": "Gallery Images",
+        "addText": "Add Image",
+        "fields": [
+          {
+            "key": "src",
+            "type": "input",
+            "templateOptions": {
+              "label": "Image URL",
+              "placeholder": "Enter image URL",
+              "required": true
+            }
+          },
+          {
+            "key": "alt",
+            "type": "input",
+            "templateOptions": {
+              "label": "Alt Text",
+              "placeholder": "Enter alt text",
+              "required": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "config.modalContainerClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Modal Container CSS Class",
+        "placeholder": "Enter CSS class for modal container",
+        "required": false
+      }
+    },
+    {
+      "key": "config.modalDialogClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Modal Dialog CSS Class",
+        "placeholder": "Enter CSS class for modal dialog",
+        "required": false
+      }
+    },
+    {
+      "key": "config.modalContentClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Modal Content CSS Class",
+        "placeholder": "Enter CSS class for modal content",
+        "required": false
+      }
+    },
+    {
+      "key": "config.modalHeaderClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Modal Header CSS Class",
+        "placeholder": "Enter CSS class for modal header",
+        "required": false
+      }
+    },
+    {
+      "key": "config.modalFooterClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Modal Footer CSS Class",
+        "placeholder": "Enter CSS class for modal footer",
+        "required": false
+      }
+    },
+    {
+      "key": "config.closeButtonClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Close Button CSS Class",
+        "placeholder": "Enter CSS class for close button",
+        "required": false
+      }
+    },
+    {
+      "key": "config.submitButtonClass",
+      "type": "input",
+      "templateOptions": {
+        "label": "Submit Button CSS Class",
+        "placeholder": "Enter CSS class for submit button",
+        "required": false
+      }
+    }
+  ]
+}
