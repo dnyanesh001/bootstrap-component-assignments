@@ -146,51 +146,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "key": "dropdownMenu",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Dropdown Menu Class",
-                  "placeholder": "Enter dropdown menu class"
-                }
-              },
-              {
-                "key": "dropdownItem",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Dropdown Item Class",
-                  "placeholder": "Enter dropdown item class"
-                }
-              },
-              {
-                "key": "searchForm",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Search Form Class",
-                  "placeholder": "Enter search form class"
-                }
-              },
-              {
-                "key": "searchInput",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Search Input Class",
-                  "placeholder": "Enter search input class"
-                }
-              },
-              {
-                "key": "searchButton",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Search Button Class",
-                  "placeholder": "Enter search button class"
-                }
               }
             ]
           },
@@ -256,12 +211,14 @@
         "collapse": "collapse navbar-collapse",
         "navItem": "nav-item",
         "ulClass": "navbar-nav",
-        "navLink": {
-          "default": "nav-link",
-          "active": "nav-link active",
-          "disabled": "nav-link disabled",
-          "dropdownToggle": "nav-link dropdown-toggle"
-        }
+        "navLink": [
+          {
+            "default": "nav-link",
+            "active": "nav-link active",
+            "disabled": "nav-link disabled",
+            "dropdownToggle": "nav-link dropdown-toggle"
+          }
+        ]
       },
       "data": {
         "navItems": [
@@ -272,7 +229,8 @@
           },
           {
             "href": "#",
-            "text": "Link"
+            "text": "Link",
+            "isActive": false
           }
         ]
       }
