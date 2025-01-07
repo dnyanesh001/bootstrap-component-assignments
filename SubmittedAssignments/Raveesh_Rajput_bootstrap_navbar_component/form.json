@@ -2,7 +2,9 @@
   "navbar-component": {
     "formFields": [
       {
-        "wrappers": ["tabs"],
+        "wrappers": [
+          "tabs"
+        ],
         "templateOptions": {
           "orientation": "horizontal",
           "navType": "nav nav-tabs"
@@ -25,6 +27,15 @@
                 }
               },
               {
+                "key": "navbodyClass",
+                "type": "input",
+                "className": "col-12",
+                "templateOptions": {
+                  "label": "Nav Body Class",
+                  "placeholder": "Enter nav body classes"
+                }
+              },
+              {
                 "key": "brand",
                 "type": "input",
                 "className": "col-12",
@@ -34,33 +45,55 @@
                 }
               },
               {
-                "key": "togglerIcon",
+                "key": "brandlogo",
                 "type": "input",
                 "className": "col-12",
                 "templateOptions": {
-                  "label": "Toggler Icon Class",
-                  "placeholder": "Enter toggler icon class"
-                }
-              },
-              {
-                "key": "collapse",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Collapse Class",
-                  "placeholder": "Enter collapse class"
-                }
-              },
-              {
-                "key": "navItem",
-                "type": "input",
-                "className": "col-12",
-                "templateOptions": {
-                  "label": "Nav Item Class",
-                  "placeholder": "Enter nav item class"
+                  "label": "Brand Logo",
+                  "placeholder": "Enter brand logo"
                 }
               }
             ]
+          },
+          {
+            "key": "data",
+            "type": "repeat",
+            "templateOptions": {
+              "label": "NavBar Data",
+              "addText": "Add navbar item"
+            },
+            "fieldArray": {
+              "fieldGroupClassName": "row",
+              "fieldGroup": [
+                {
+                  "key": "src",
+                  "type": "input",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "navbar brand src",
+                    "addText": "Enter your logo link src"
+                  }
+                },
+                {
+                  "key": "text",
+                  "type": "input",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "navbar brand name",
+                    "addText": "Enter your brand name"
+                  }
+                },
+                {
+                  "key": "href",
+                  "type": "input",
+                  "className": "col-12",
+                  "templateOptions": {
+                    "label": "navbar href",
+                    "addText": "Enter your href"
+                  }
+                }
+              ]
+            }
           }
         ]
       }
@@ -68,11 +101,17 @@
     "formData": {
       "config": {
         "navbar": "navbar navbar-expand-lg navbar-light bg-light",
+        "navbodyClass": "container-fluid",
         "brand": "navbar-brand",
-        "togglerIcon": "navbar-toggler-icon",
-        "collapse": "collapse navbar-collapse",
-        "navItem": "nav-item"
-      }
+        "brandlogo": "logo"
+      },
+      "data": [
+        {
+          "src": "/img/bird-logo.avif",
+          "text": "BRAND",
+          "href": "#"
+        }
+      ]
     }
   }
 }
