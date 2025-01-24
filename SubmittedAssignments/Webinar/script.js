@@ -4,47 +4,77 @@ class EnglishWorkshopComponent extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
-        .bg-primary { background-color: #007bff; color: white; padding: 20px; text-align: center; }
-        .bg-light { background-color: #f8f9fa; }
-        .bg-dark { background-color: #343a40; color: white; text-align: center; padding: 20px; }
-        .fomo-heading { background-color: #ffefd5; padding: 20px; text-align: center; border-radius: 10px; }
-        .btn { display: inline-block; padding: 10px 20px; margin: 10px; border: none; cursor: pointer; font-size: 18px; }
-        .btn-warning { background-color: #ffc107; color: black; }
-        .btn-warning:hover { background-color: #e0a800; }
-        .btn-info { background-color: #17a2b8; color: white; }
-        .btn-info:hover { background-color: #117a8b; }
+        .fomo-heading {
+            background-color: #ffefd5;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .cta-btn {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .cta-btn:hover {
+            background-color: #0056b3;
+        }
       </style>
-      <header class="bg-primary">
-        <h1>📢 Join Our FREE English Communication Workshop! 🎉</h1>
-        <p>Learn English by doing, with exciting enactments and group activities!</p>
-        <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
-      </header>
-      <section class="fomo-heading">
-        <h2 class="text-danger">⏳ Only 40 Seats Available! Register Before 28th January 2025!</h2>
-        <p class="fw-bold">Don't miss this golden opportunity to improve your English communication skills absolutely FREE!</p>
-        <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
-      </section>
-      <section>
-        <h3 class="text-primary">Workshop Details</h3>
-        <ul>
-          <li>📅 <strong>Date:</strong> 30th January 2025</li>
-          <li>⏳ <strong>Time:</strong> 11:00 AM</li>
-          <li>🕒 <strong>Duration:</strong> 3 Hours</li>
-          <li>🏫 <strong>By:</strong> DY Patil English Department</li>
-          <li>📍 <strong>Location:</strong> SwayamGuru TechLok</li>
-        </ul>
-        <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
-      </section>
-      <section class="bg-light text-center">
-        <h3>🎯 Ready to Improve Your English Communication?</h3>
-        <p>Seize this opportunity to boost your confidence and language skills in a fun and interactive way!</p>
-        <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
-        <button class="btn btn-info" onclick="contactWhatsApp()">WhatsApp: 8999417889 📲</button>
-      </section>
-      <footer class="bg-dark">
-        <p>📞 For more information, contact us at +91 8999417889</p>
-        <small>© 2025 DY Patil English Department. All Rights Reserved.</small>
-      </footer>
+
+      <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">📢 Join Our FREE English Communication Workshop! 🎉</h1>
+            <p class="lead">Learn English by doing, with exciting enactments and group activities!</p>
+            <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
+         </div>
+    </header>
+
+    <!-- FOMO Section -->
+    <section class="fomo-heading my-5">
+        <div class="container">
+            <h2 class="text-danger">⏳ Only 40 Seats Available! Register Before 28th January 2025!</h2>
+            <p class="fw-bold">Don't miss this golden opportunity to improve your English communication skills absolutely FREE!</p>
+            <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
+        </div>
+    </section>
+
+    <!-- Workshop Details Section -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <h3 class="text-primary">Workshop Details</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">📅 <strong>Date:</strong> 30th January 2025</li>
+                    <li class="list-group-item">⏳ <strong>Time:</strong> 11:00 AM</li>
+                    <li class="list-group-item">🕒 <strong>Duration:</strong> 3 Hours</li>
+                    <li class="list-group-item">🏫 <strong>By:</strong> DY Patil English Department</li>
+                    <li class="list-group-item">📍 <strong>Location:</strong> SwayamGuru TechLok</li>
+                </ul>
+                <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://apnaguru.in/api/download/apnaguru.in/.%20Tushar%20/4d44b43a-8519-48f5-9243-2ed122acd29d.webp" alt="Workshop" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">🎯 Ready to Improve Your English Communication?</h3>
+            <p class="mb-4">Seize this opportunity to boost your confidence and language skills in a fun and interactive way! Seats are limited, so act fast!</p>
+            <button class="btn btn-warning" id="register-btn">Register Now 📲</button>
+            <a href="https://wa.me/918999417889" class="btn btn-lg btn-info">WhatsApp: 8999417889 📲</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">📞 For more information, contact us at +91 8999417889</p>
+            <small>© 2025 DY Patil English Department. All Rights Reserved.</small>
+        </div>
+    </footer>
     `;
 
     this.shadowRoot.getElementById('register-btn').addEventListener('click', () => this.registerNow());
