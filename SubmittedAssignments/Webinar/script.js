@@ -4,6 +4,7 @@ class EnglishWorkshopComponent extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
+      @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
         .fomo-heading {
             background-color: #ffefd5;
             padding: 20px;
