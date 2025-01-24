@@ -113,7 +113,7 @@ class EnglishWorkshopComponent extends HTMLElement {
             detail: {
                 data: {
                     dataModel: 'participants',
-                    data: {participantId:this.data.UserDetails.id,appointmentId:"abc"},
+                    data: {participantId:this.data.UserDetails.id,appointmentId:"67932ffbcd0aef70d2a1c654"},
                 },
             },
         });
