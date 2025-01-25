@@ -126,7 +126,7 @@ class EnglishWorkshopComponent extends HTMLElement {
             detail: {
                 data: {
                     isExternalRedirect: true,
-                    redirectUrl:"http://localhost:4200/auth/quick-register?redirect=/w/67931dc7c233a75cbff31f5a/free-english-workshop"
+                    redirectUrl:"https://apnaguru.in/auth/quick-register?redirect=/w/67931dc7c233a75cbff31f5a/free-english-workshop"
                 },
             },
         });
