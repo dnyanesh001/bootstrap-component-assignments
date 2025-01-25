@@ -73,7 +73,6 @@ class EnglishWorkshopComponent extends HTMLElement {
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p class="mb-0">📞 For more information, contact us at +91 8999417889</p>
-            <small>© 2025 DY Patil English Department. All Rights Reserved.</small>
         </div>
     </footer>
     `;
