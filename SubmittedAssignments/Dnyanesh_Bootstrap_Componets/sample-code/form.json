@@ -1,0 +1,59 @@
+{
+    "fields": [
+      {
+        "key": "title",
+        "type": "input",
+        "templateOptions": {
+          "label": "Card Title",
+          "placeholder": "Enter card title",
+          "required": true
+        }
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "templateOptions": {
+          "label": "Description",
+          "placeholder": "Enter card description",
+          "required": true
+        }
+      },
+      {
+        "key": "image",
+        "type": "input",
+        "templateOptions": {
+          "label": "Image URL",
+          "placeholder": "Enter image URL",
+          "required": true
+        }
+      },
+      {
+        "key": "config.imageClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "Image CSS Class",
+          "placeholder": "Enter CSS class for image",
+          "required": true
+        }
+      },
+      {
+        "key": "config.titleClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "Title CSS Class",
+          "placeholder": "Enter CSS class for title",
+          "required": true
+        }
+      },
+      {
+        "key": "config.textClass",
+        "type": "input",
+        "templateOptions": {
+          "label": "Text CSS Class",
+          "placeholder": "Enter CSS class for text",
+          "required": true
+        }
+      }
+    ]
+  }
+  
