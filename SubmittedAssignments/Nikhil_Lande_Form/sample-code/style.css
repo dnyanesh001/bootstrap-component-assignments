@@ -1,0 +1,8 @@
+.section-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
