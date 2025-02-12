@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Card Component Example</title>
+</head>
+
+<body class="container">
+    <h2>Card Component Example</h2>
+
+    <!-- Example Usage of Card Component -->
+    <div class="row">
+        <card-component class="col-4 d-block" data='{
+      "title": "Card Title",
+      "description": "This is a sample card component description.",
+      "image": "https://via.placeholder.com/150"
+    }' config='{
+      "imageClass": "card-img-top",
+      "titleClass": "card-title",
+      "textClass": "card-text"
+    }'>
+        </card-component>
+
+        <card-component class="col-4 d-block" data='{
+      "title": "This is Product Card",
+      "subTitle": "Card Subtitle",
+      "description": "This is a sample card component description.",
+      "image": "https://via.placeholder.com/150"
+    }' config='{
+      "imageClass": "card-img-top",
+      "titleClass": "card-title",
+      "textClass": "card-text"
+    }'>
+        </card-component>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
